@@ -1,4 +1,11 @@
+Repo for community additions/tweaks to [Essential Core Skills Rebalance II](https://community.gaslampgames.com/threads/essential-core-skills-rebalance-ii-electric-bungalow.5624/) for [Dungeons of Dredmor](https://dungeonsofdredmor.com/).
 
+
+## Changes to the original mod
+
+None, yet!
+
+## ECSRII Notes.txt
 
 FIGHTER
 
