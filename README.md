@@ -4,11 +4,12 @@ Repo for community additions/tweaks to [Essential Core Skills Rebalance II](http
 
 # Changes to the original mod
 
-None, yet!
+### In progress
+- Newer stances let you cycle between themselves and their old stances without having to keep both on your hotbar.
 
 # ECSRII Notes.txt
 
-These are the original balance changes made by forum user Essence in the forums above. It has been edited and ordered for easier reading. It is recommended to read them in case you want more information about it.
+These are the balance changes made by the original mod author, Essence. They have been edited and ordered for easier reading.
 
 ## FIGHTER
 
