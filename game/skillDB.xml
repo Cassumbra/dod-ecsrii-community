@@ -776,7 +776,7 @@
   </ability>
 <ability name="Ahnold's Y-Axis Stance" icon="skills/skill_axe.png" skill="1" level="3">
   <description text="Don't you know the Dewey Decimial System? Yes, but more importantly, you've learned the value of swinging your weapon side-to-side rather than up-and-down!"/>
-  <spell name="Ahnold's Y-Axis Stance"/>
+  <spell name="Ahnold Cycler"/>
   <secondarybuff id="4" amount="2"/> <!-- Crit -->
   <damagebuff slashing="2"/>
   </ability>

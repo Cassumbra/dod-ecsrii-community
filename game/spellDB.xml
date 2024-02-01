@@ -5495,6 +5495,31 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		</buff>
 	</spell>
 	
+<spell name="Check For I'm OK Stance" type="self">
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="The 'And I'm OK!' Stance" spell="Ahnold's Y-Axis Stance"/>
+	</spell>
+	
+<spell name="Ahnold Start Cycle" type="self">
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Ahnold's Y-Axis Stance" spell="Check For I'm OK Stance"/>
+	</spell>
+	
+<spell name="Ahnold Work Please" type="self">
+	<buff usetimer="1" time="0" icon="skills/placeholder64.png" smallicon="skills/placeholder32.png">
+		<description text="U NO SEE THIS EVAR"/>
+		</buff>
+	</spell>
+
+<spell name="Ahnold Success!" type="self">
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Ahnold Work Please" spell="The 'And I'm OK!' Stance"/>
+	</spell>
+	
+<spell name="Ahnold Cycler" type="self" noanimation="1" downtime="1" icon="skills/warrior/deadshot0_32.png">
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="The 'And I'm OK!' Stance" spell="Ahnold Work Please"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="The 'And I'm OK!' Stance" spell="Ahnold's Y-Axis Stance"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Ahnold's Y-Axis Stance" spell="Ahnold Success!"/>
+   <effect type="trigger" spell="Ahnold Start Cycle"/>
+   </spell>
+	
 <spell name="Jarlish Armor Destruction" type="target">
 	<requirements weapon="1"/>
 	<buff usetimer="1" time="30" self="0" bad="1" icon="skills/warrior/axe_mantra64.png" smallicon="skills/warrior/axe_mantra32.png">
