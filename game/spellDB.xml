@@ -5428,6 +5428,8 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	
 <!-- Ess' NOTE TO SELF: Give David the Avenge Your Father Small icon. --> 	
 
+<!-- V: This is fucking insane. DO NOT DIFFERENTIATE VARIABLES WITH WHITESPACE. I was already planning on changing how these spells were named earlier, but now I'm *definitely* going to have to.-->
+<!-- TODO: Fix this. -->
 <spell name="Make This Whole Thing Work Please " type="self">
 	<buff usetimer="1" time="0" icon="skills/placeholder64.png" smallicon="skills/placeholder32.png">
 		<description text="U NO SEE THIS EVAR"/>
@@ -6130,6 +6132,8 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<description text="Bores the flesh of your enemies, sapping their strength and life-blood. Makes a bloody awful mess. Painful enough to keep casters from casting." />
 </spell>
 
+<!-- V: Ess, what the fuck is this. Why are you doing this. -->
+<!-- TODO: Figure out if this is necessary and then change it. If it is necessary, add some note so that future folks don't get confused by this insanity. -->
 <spell name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Fleshbored!" type="targetmonster">
 	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Bon Jovi Stance" spell="Fleshbored"/>
 	</spell>
