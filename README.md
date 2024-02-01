@@ -167,7 +167,7 @@ The old Staves has been entirely ripped out and replaced with a brand new (Wizar
 **Level 4: Shillelagh**
 
 - Passive ability. All Staff strikes deal an additional 1+(.05* Magic Power) Aethereal damage.
-- Passive: +1 :dmg_aethereal: , +1 Crushing Damage, +1 Block Chance
+- Passive: +1 Aethereal Damage , +1 Crushing Damage, +1 Block Chance
 
 **Level 5: Priming Blow**
 
@@ -185,6 +185,7 @@ The old Staves has been entirely ripped out and replaced with a brand new (Wizar
 ### UNARMED [CHANGE]
 
 The old Unarmed has been entirely ripped out and replaced with a brand new skill. Unarmed should be about knockbacks, stuns and multiplying dealt damage. Its key stat is Dodge Chance.
+
 **Level 1: Brawlin' Stance**
 
 - Activated buff. Removes Nerve Strike Stance.
