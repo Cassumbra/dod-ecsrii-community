@@ -30,142 +30,147 @@ The old Deadshot has been entirely ripped out and replaced with a brand new skil
 ### SWORDS [CHANGE]
 
 The old Swords has been entirely ripped out and replaced with a brand new skill. Swords should be about nuking single opponents and countering attacks, with an 'off' level granting magic defense. Its key stat is Counter Chance.
-    **Level 1: Touche!**
-    - Activated attack; cooldown: 6.
-    - Attack inflicts an enduring, stacking debuff of -5 Counter, -5 Block, and -5 Dodge on your opponent.
-    - Passive: +3 Counter Chance and +1 Piercing Damage
-    **Level 2: Liechtenauer's Overhau**
-    - Activated attack; cooldown: 5.
-    - Attack inflicts extra damage equal to 2+(.25*Nimbleness) and causes Bleed.
-    - Passive: +1 Slashing Damage and +2 Counter Chance
-    **Level 3: Duelist Stance**
-    - Activated Buff. Removes Knight Stance. Grants +10 Counter, +10 Dodge, and +5 Melee Power.
-    - Also adds a playerHitEffectBuff that inflicts a 5-turn-long debuff on the player 100% of the time when hit: -2 Counter, -2 Dodge, and -1 Melee Power. The buff stacks once, the debuff stacks up to 20 times.
-    - Passive: +2 Counter Chance and +1 Enemy Dodge Reduction
-    **Level 4: Thibault's Trompenant**
-    - Activated attack; cooldown 9.
-    - Inflicts attack damage + 4+(.25*Nimbleness) Piercing Damage in a 3-square-long line in front of the player.
-    - Passive: +2 Slashing Damage and +1 Enemy Dodge Reduction
-    **Level 5: Knight Stance**
-    - Activated Buff. Removes Duelist Stance. +40 Block, +10 Counter, -100 Dodge, -10 EDR.
-    - Triggers a secondary, separately-removable buff called Parry Magic that grants +51 Magic Reflect with an Upkeep of 2 turns.
-    - Passive: +2 Counter Chance and +2 Enemy Dodge Reduction
-    **Level 6: Sword Poet**
-    - Passive. CounterBuff (100%) inflicts 8+(.25*Nimbleness) and causes bleeding and has a 50% chance to Paralyze for 2 turns.
-    - Passive: +6 Counter Chance, +1 Enemy Dodge Reduction and +3 Slashing Damage
+**Level 1: Touche!**
+
+- Activated attack; cooldown: 6.
+- Attack inflicts an enduring, stacking debuff of -5 Counter, -5 Block, and -5 Dodge on your opponent.
+- Passive: +3 Counter Chance and +1 Piercing Damage
+**Level 2: Liechtenauer's Overhau**
+- Activated attack; cooldown: 5.
+- Attack inflicts extra damage equal to 2+(.25*Nimbleness) and causes Bleed.
+- Passive: +1 Slashing Damage and +2 Counter Chance
+**Level 3: Duelist Stance**
+- Activated Buff. Removes Knight Stance. Grants +10 Counter, +10 Dodge, and +5 Melee Power.
+- Also adds a playerHitEffectBuff that inflicts a 5-turn-long debuff on the player 100% of the time when hit: -2 Counter, -2 Dodge, and -1 Melee Power. The buff stacks once, the debuff stacks up to 20 times.
+- Passive: +2 Counter Chance and +1 Enemy Dodge Reduction
+**Level 4: Thibault's Trompenant**
+- Activated attack; cooldown 9.
+- Inflicts attack damage + 4+(.25*Nimbleness) Piercing Damage in a 3-square-long line in front of the player.
+- Passive: +2 Slashing Damage and +1 Enemy Dodge Reduction
+**Level 5: Knight Stance**
+- Activated Buff. Removes Duelist Stance. +40 Block, +10 Counter, -100 Dodge, -10 EDR.
+- Triggers a secondary, separately-removable buff called Parry Magic that grants +51 Magic Reflect with an Upkeep of 2 turns.
+- Passive: +2 Counter Chance and +2 Enemy Dodge Reduction
+**Level 6: Sword Poet**
+- Passive. CounterBuff (100%) inflicts 8+(.25*Nimbleness) and causes bleeding and has a 50% chance to Paralyze for 2 turns.
+- Passive: +6 Counter Chance, +1 Enemy Dodge Reduction and +3 Slashing Damage
 
 ### AXES [CHANGE]
 
 The old Axes has been entirely ripped out and replaced with a brand new skill. Axes should be about nuking groups, using crits and increasing damage by continuously debuffing enemies. Its key stat is Critical Hit Chance.
-    **Level 1: Rend**
-    - Activated attack, cooldown: 6.
-    - Inflicts an enduring, stacking -4 Slashing Resistance bonus on the target.
-    - Passive: +3 Critical Hit Chance
-    **Level 2: Lumberjack Stance**
-    - Activated buff. Removes Barbarian Stance. Adds -5 Armor Absorption, +25 Critical Hit Chance, +3 Melee Power.
-    - Passive: +1 Slashing Damage and +2 Critical Hit Chance
-    **Level 3: Norwegian Axenado**
-    - Activated attack, cooldown 13.
-    - Attack deals normal damage + 4+(.15*Crit Chance) Slashing Damage to all 8 squares around the player.
-    - Passive: +3 Enemy Dodge Reduction
-    **Level 4: Barbarian Stance**
-    - Activated buff. Removes Lumberjack Stance. All normal attacks are modified to a 1-tile semicircle in front of the player.
-    - Targeted enemies take normal damage and are locked down and bleed. Other enemies hit take normal damage.
-    - Passive: +2 Slashing Damage +2 Critical Hit Chance
-    **Level 5: Viking King**
-    - Passive. Player gains a 100% CriticalBuff that inflicts an enduring, stacking -5 Armor Absorption debuff on your opponent.
-    - Passive: +3 Critical Hit Chance
-    **Level 6: Philosopher Of The Axe**
-    - Activated attack, cooldown: 17.
-    - Deals 8+(.25* Crit Chance) Existential Damage damage to all monsters within 2 squares of the player.
+**Level 1: Rend**
+
+- Activated attack, cooldown: 6.
+- Inflicts an enduring, stacking -4 Slashing Resistance bonus on the target.
+- Passive: +3 Critical Hit Chance
+**Level 2: Lumberjack Stance**
+- Activated buff. Removes Barbarian Stance. Adds -5 Armor Absorption, +25 Critical Hit Chance, +3 Melee Power.
+- Passive: +1 Slashing Damage and +2 Critical Hit Chance
+**Level 3: Norwegian Axenado**
+- Activated attack, cooldown 13.
+- Attack deals normal damage + 4+(.15*Crit Chance) Slashing Damage to all 8 squares around the player.
+- Passive: +3 Enemy Dodge Reduction
+**Level 4: Barbarian Stance**
+- Activated buff. Removes Lumberjack Stance. All normal attacks are modified to a 1-tile semicircle in front of the player.
+- Targeted enemies take normal damage and are locked down and bleed. Other enemies hit take normal damage.
+- Passive: +2 Slashing Damage +2 Critical Hit Chance
+**Level 5: Viking King**
+- Passive. Player gains a 100% CriticalBuff that inflicts an enduring, stacking -5 Armor Absorption debuff on your opponent.
+- Passive: +3 Critical Hit Chance
+**Level 6: Philosopher Of The Axe**
+- Activated attack, cooldown: 17.
+- Deals 8+(.25* Crit Chance) Existential Damage damage to all monsters within 2 squares of the player.
 
 ### MACES [CHANGE]
 
 The old Maces has been entirely ripped out and replaced with a brand new skill. Maces should be about high damage numbers, knockbacks and slight debuffs. Its key stat is Crushing Damage.
-    **Level 1: I Am A Player And I Crush A Lot.**
-    - Activated attack, cooldown: 8.
-    - Deals normal weapon damage and inflicts Broken Bones (-2 Burliness, -4 Nimbleness, -2 Melee Power, -5 Block Chance, -3 Armor Absorption for 68 turns) and Daze (-40 Critical Hit Chance, -40 Dodge Chance, -30 Counter Chance, -20 Block Chance, -20 Magic Resistance, and mute for 8 turns).
-    - Passive: +2 Enemy Dodge Reduction, +1 Crushing Damage
-    **Level 2: Dwarven Handshake Stance**
-    - Activated buff. Removes Sundering Stance and Mjolnir Stance. -40 Crit, +4 Piercing damage, 25% to proc Unresistable Knock and 2+(.1 *Burliness) Blasting Damage .
-    - Passive: +1 Enemy Dodge Reduction +1 Crushing Damage +1 Piercing Damage
-    **Level 3: Sundering Stance**
-    - Activated buff. Removes Dwarven Handshake Stance and Mjolnir Stance.
-    - Attacks inflict a 4-turn stacking debuff of -2 Melee Power and -5 Enemy Dodge Reduction.
-    - Passive: +3 Crushing Damage
-    **Level 4: Ragnar's Meteor**
-    - Activated Attack, cooldown: 13.
-    - Hits the 6-square area immediately in front of the player for attack damage plus 4+(.2*Burliness) Blasting Damage and an Unresistable Knock.
-    - Passive: +2 Piercing Damage, +1 Crushing Damage
-    **Level 5: Hulk SMASH!**
-    - Activated attack, cooldown: 8.
-    - Deals additional 1.5\*Melee Power Crushing Damage damage and inflicts a 2-turn debuff on you such that when attacked, you take (.1* Melee Power) extra damage.
-    - Passive: +3 Enemy Dodge Reduction, +1 Crushing Damage
-    **Level 6: Mjolnir Stance**
-    - Activated buff. Removes Dwarven Handshake Stance and Sundering Stance.
-    - Grants +30 Burliness and a 5% targetHitEffectBuff that essentially casts Fulminaric Bolt on your melee victim.
-    - Passive: +3 Piercing Damage, +3 Crushing Damage, +1 Smithing.
+**Level 1: I Am A Player And I Crush A Lot.**
+
+- Activated attack, cooldown: 8.
+- Deals normal weapon damage and inflicts Broken Bones (-2 Burliness, -4 Nimbleness, -2 Melee Power, -5 Block Chance, -3 Armor Absorption for 68 turns) and Daze (-40 Critical Hit Chance, -40 Dodge Chance, -30 Counter Chance, -20 Block Chance, -20 Magic Resistance, and mute for 8 turns).
+- Passive: +2 Enemy Dodge Reduction, +1 Crushing Damage
+**Level 2: Dwarven Handshake Stance**
+- Activated buff. Removes Sundering Stance and Mjolnir Stance. -40 Crit, +4 Piercing damage, 25% to proc Unresistable Knock and 2+(.1 *Burliness) Blasting Damage .
+- Passive: +1 Enemy Dodge Reduction +1 Crushing Damage +1 Piercing Damage
+**Level 3: Sundering Stance**
+- Activated buff. Removes Dwarven Handshake Stance and Mjolnir Stance.
+- Attacks inflict a 4-turn stacking debuff of -2 Melee Power and -5 Enemy Dodge Reduction.
+- Passive: +3 Crushing Damage
+**Level 4: Ragnar's Meteor**
+- Activated Attack, cooldown: 13.
+- Hits the 6-square area immediately in front of the player for attack damage plus 4+(.2*Burliness) Blasting Damage and an Unresistable Knock.
+- Passive: +2 Piercing Damage, +1 Crushing Damage
+**Level 5: Hulk SMASH!**
+- Activated attack, cooldown: 8.
+- Deals additional 1.5\*Melee Power Crushing Damage damage and inflicts a 2-turn debuff on you such that when attacked, you take (.1* Melee Power) extra damage.
+- Passive: +3 Enemy Dodge Reduction, +1 Crushing Damage
+**Level 6: Mjolnir Stance**
+- Activated buff. Removes Dwarven Handshake Stance and Sundering Stance.
+- Grants +30 Burliness and a 5% targetHitEffectBuff that essentially casts Fulminaric Bolt on your melee victim.
+- Passive: +3 Piercing Damage, +3 Crushing Damage, +1 Smithing.
 
 ### STAVES [CHANGE]
 
 The old Staves has been entirely ripped out and replaced with a brand new (Wizard) skill. Staves should be about flexibility and damaging through Magic Power. Its key stat is Block Chance.
-    **Level 1: Not In The Face!**
-    - Activated buff. Removes Two Ends Stance and Long Stance.
-    - Grants +10 Block, +10 Magic Resist, and a 20% stun proc.
-    - Passive: +3 Block Chance.
-    **Level 2: Spirit Conduit**
-    - Activated attack, cooldown: 5.
-    - Inflicts 1+ (.2 * Magic Power) Transmutative damage and hits the enemy with a 2-turn -20 Magic Resist debuff.
-    - Passive: +1 Crushing Damage , +1 Enemy Dodge Reduction, +1 Block Chance .
-    **Level 3: This Thing Has Two Ends**
-    - Activated buff. Attacks deal an additional (.5*Melee Power) damage.
-    - All Staff-based special attacks (Spirit Conduit, Shillelagh, Priming Blow) have their effects increased by 50% while in this stance.
-    - Passive: +1 Enemy Dodge Reduction, +2 Block Chance
-    **Level 4: Shillelagh**
-    - Passive ability. All Staff strikes deal an additional 1+(.05* Magic Power) Aethereal damage.
-    - Passive: +1 :dmg_aethereal: , +1 Crushing Damage, +1 Block Chance
-    **Level 5: Priming Blow**
-    - Activated Attack, cooldown: 9.
-    - Deals normal damage and inflicts a debuff of -3 Aetherial Resist, -2 Conflagratory Resist, -3 Transmutative Resist, -2 Necromantic Resist and -2 Voltaic Resist permanently and stacking.
-    - Passive: +3 Enemy Dodge Reduction, +2 Block Chance
-    **Level 6: Shepard's Style**
-    - Activated buff. Removes Two Ends Stance and Not In The Face.
-    - Normal hits and Staff-based special attacks sweep in a 3x3 area centered at the target.
-    - The target and enemies behind it take double damage. Other enemies hit take normal damage.
-    - Passive: +3 Aetherial Damage and +6 Block Chance
+**Level 1: Not In The Face!**
+
+- Activated buff. Removes Two Ends Stance and Long Stance.
+- Grants +10 Block, +10 Magic Resist, and a 20% stun proc.
+- Passive: +3 Block Chance.
+**Level 2: Spirit Conduit**
+- Activated attack, cooldown: 5.
+- Inflicts 1+ (.2 * Magic Power) Transmutative damage and hits the enemy with a 2-turn -20 Magic Resist debuff.
+- Passive: +1 Crushing Damage , +1 Enemy Dodge Reduction, +1 Block Chance .
+**Level 3: This Thing Has Two Ends**
+- Activated buff. Attacks deal an additional (.5*Melee Power) damage.
+- All Staff-based special attacks (Spirit Conduit, Shillelagh, Priming Blow) have their effects increased by 50% while in this stance.
+- Passive: +1 Enemy Dodge Reduction, +2 Block Chance
+**Level 4: Shillelagh**
+- Passive ability. All Staff strikes deal an additional 1+(.05* Magic Power) Aethereal damage.
+- Passive: +1 :dmg_aethereal: , +1 Crushing Damage, +1 Block Chance
+**Level 5: Priming Blow**
+- Activated Attack, cooldown: 9.
+- Deals normal damage and inflicts a debuff of -3 Aetherial Resist, -2 Conflagratory Resist, -3 Transmutative Resist, -2 Necromantic Resist and -2 Voltaic Resist permanently and stacking.
+- Passive: +3 Enemy Dodge Reduction, +2 Block Chance
+**Level 6: Shepard's Style**
+- Activated buff. Removes Two Ends Stance and Not In The Face.
+- Normal hits and Staff-based special attacks sweep in a 3x3 area centered at the target.
+- The target and enemies behind it take double damage. Other enemies hit take normal damage.
+- Passive: +3 Aetherial Damage and +6 Block Chance
 
 ### UNARMED [CHANGE]
 
 The old Unarmed has been entirely ripped out and replaced with a brand new skill. Unarmed should be about knockbacks, stuns and multiplying dealt damage. Its key stat is Dodge Chance.
-    **Level 1: Brawlin' Stance**
-    - Activated buff. Removes Nerve Strike Stance.
-    - All attacks proc 1+(.2 *EDR) Crushing damage and Crushed Bones (see Maces level 1) 20% of the time.
-    - Passive: +1 Piercing Damage , +1 Enemy Dodge Reduction, +1 Dodge Chance .
-    **Level 2: Billy Quan Maneuver**
-    - Activated attack, cooldown: 4.
-    - Deals double melee damage, hits the target with an Unresistable Knock, and teleports you one square forward.
-    - Passive: +3 Dodge Chance.
-    **Level 3: Boot To The Head**
-    - Activated attack, cooldown 7.
-    - Normal attack damage procs Unresistable Knock and Daze (see Maces level 1).
-    - Passive: +2 Enemy Dodge Reduction, +2 Dodge Chance
-    **Level 4: Nerve Strike Stance**
-    - Activated buff. Removes Brawlin' Stance.
-    - Attacks have a 50% chance to proc, and triggers one of the following effects:
-     - Dazed (see Maces level 1)
-     - Stunned (-100 Dodge Chance, -100 Counter Chance, -20 Block Chance, -20 Magic Resistance, and paralyzed for 2 turns.)
-     - Paralysis for 2 turns
-     - Crushed Bones (see Maces level 1)
-     - Sundered (see Maces level 3)
-     - 6+(.2*EDR) Putrefying damage.
-    - Passive: +1 Piercing Damage, +1 Righteous Damage , +1 Dodge Chance
-    **Level 5: Two Feet Stomp The Diggle**
-    - Passive. Melee attacks have a 25% chance to proc Nice Combo!, which deals an additional melee attack that also has a 25% chance to proc Nice Combo! (Yes, this can chain indefinitely if you're absurdly lucky.)
-    - Passive: +2 Enemy Dodge Reduction, +3 Dodge Chance
-    **Level 6: Master Of The Dragon Foot Technique**
-    - Activated attack, cooldown: 24.
-    - Deals attack damage to all 4 surrounding squares. Then has a 66% chance to do it again, then another 66% chance to do it again, then a 67% chance to do it again. Then hits all 4 surrounding squares with an Unresistable Knock.
-    - Passive: +3 Righteous Damage , +5 Dodge Chance
+**Level 1: Brawlin' Stance**
+
+- Activated buff. Removes Nerve Strike Stance.
+- All attacks proc 1+(.2 *EDR) Crushing damage and Crushed Bones (see Maces level 1) 20% of the time.
+- Passive: +1 Piercing Damage , +1 Enemy Dodge Reduction, +1 Dodge Chance .
+**Level 2: Billy Quan Maneuver**
+- Activated attack, cooldown: 4.
+- Deals double melee damage, hits the target with an Unresistable Knock, and teleports you one square forward.
+- Passive: +3 Dodge Chance.
+**Level 3: Boot To The Head**
+- Activated attack, cooldown 7.
+- Normal attack damage procs Unresistable Knock and Daze (see Maces level 1).
+- Passive: +2 Enemy Dodge Reduction, +2 Dodge Chance
+**Level 4: Nerve Strike Stance**
+- Activated buff. Removes Brawlin' Stance.
+- Attacks have a 50% chance to proc, and triggers one of the following effects:
+- Dazed (see Maces level 1)
+- Stunned (-100 Dodge Chance, -100 Counter Chance, -20 Block Chance, -20 Magic Resistance, and paralyzed for 2 turns.)
+- Paralysis for 2 turns
+- Crushed Bones (see Maces level 1)
+- Sundered (see Maces level 3)
+- 6+(.2*EDR) Putrefying damage.
+- Passive: +1 Piercing Damage, +1 Righteous Damage , +1 Dodge Chance
+**Level 5: Two Feet Stomp The Diggle**
+- Passive. Melee attacks have a 25% chance to proc Nice Combo!, which deals an additional melee attack that also has a 25% chance to proc Nice Combo! (Yes, this can chain indefinitely if you're absurdly lucky.)
+- Passive: +2 Enemy Dodge Reduction, +3 Dodge Chance
+**Level 6: Master Of The Dragon Foot Technique**
+- Activated attack, cooldown: 24.
+- Deals attack damage to all 4 surrounding squares. Then has a 66% chance to do it again, then another 66% chance to do it again, then a 67% chance to do it again. Then hits all 4 surrounding squares with an Unresistable Knock.
+- Passive: +3 Righteous Damage , +5 Dodge Chance
 
 ### ARCHERY [CHANGE]
 
