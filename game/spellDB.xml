@@ -6159,6 +6159,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<description text="You throw hard. Sometimes, people you hit get knocked around a bit. It's a blessing and a curse.  No, really it's pretty much entirely a blessing."/>
 		</buff>
 	</spell> 
+	
  
  <spell name="Monster Toss" type="target" attack="1" downtime="32" icon="skills/monster_toss32.png" >
    <effect type="damage" blasting="1" />
@@ -6176,7 +6177,32 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<damagebuff asphyxiative="4"/>
 		<description text="You throw fast. So fast that your weapons bury themselves into the flesh of your enemies, causing serious damage. It's a curse. For them!"/>
 		</buff>
-	</spell> 
+	</spell>
+	
+<spell name="Check For Hulky Hurler" type="self">
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Hulky Hurler" spell="Fastball Specialist"/>
+	</spell>
+	
+<spell name="Fastball Specialist Start Cycle" type="self">
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Fastball Specialist" spell="Check For Hulky Hurler"/>
+	</spell>
+	
+<spell name="Fastball Specialist Work Please" type="self">
+	<buff usetimer="1" time="0" icon="skills/placeholder64.png" smallicon="skills/placeholder32.png">
+		<description text="U NO SEE THIS EVAR"/>
+		</buff>
+	</spell>
+
+<spell name="Fastball Specialist Success!" type="self">
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Fastball Specialist Work Please" spell="Hulky Hurler"/>
+	</spell>
+	
+<spell name="Fastball Specialist Cycler" type="self" noanimation="1" downtime="1" icon="skills/warrior/deadshot0_32.png">
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Hulky Hurler" spell="Fastball Specialist Work Please"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Hulky Hurler" spell="Fastball Specialist"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Fastball Specialist" spell="Fastball Specialist Success!"/>
+   <effect type="trigger" spell="Fastball Specialist Start Cycle"/>
+   </spell>
 
 
 

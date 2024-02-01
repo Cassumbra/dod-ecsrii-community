@@ -1075,7 +1075,7 @@
 	<secondarybuff id="9" amount="5"/> <!-- EDR -->
 	<recoverybuff amount="25"/>
 	<damagebuff crushing="3"/> 
-	<spell name="Fastball Specialist"/>
+	<spell name="Fastball Specialist Cycler"/>
 	<thrownBuff percentage="29" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Fleshbore!"/>
 	</ability>
 
