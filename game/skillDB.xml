@@ -822,7 +822,7 @@
 <ability name="The Montoya Defense" icon="skills/warrior/sword_lore64.png" skill="0" level="4" >
   <secondarybuff id="9" amount="2"/> <!-- EDR -->
   <secondarybuff id="8" amount="2"/> <!-- Counter -->
-  <spell name="The Montoya Defense"/>
+  <spell name="Montoya Cycler"/>
   <description text="Studious research into the use of swords has unlocked terrible secrets: So long as you give up the ability to dodge, you can easily move your sword into the path of almost any -- even magical -- incoming attacks." />
   </ability>
 <ability name="Sword Poet Laureate" icon="skills/warrior/swordplay3_64.png" skill="0" level="5">
