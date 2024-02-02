@@ -19,8 +19,8 @@ These are the original balance changes made by forum user Essence in the forums 
 
 ### DUAL WIELD [NERF]
 
-- -20 EDR given on 1st level.
-- Each successive level gives +5 EDR (net total of +0 over the entire tree.)
+- -20 Enemy Dodge Reduction given on 1st level.
+- Each successive level gives +5 Enemy Dodge Reduction (net total of +0 over the entire tree.)
 - The 3rd level of Deadshot gives less stats and now offers Inverse Minion Law, which checks to see how many enemies are around you each time you get hit and gives bonuses based on the number of enemies within the surrounding 8 squares.
 
 ### DEADSHOT [CHANGE]
@@ -57,7 +57,7 @@ The old Swords has been entirely ripped out and replaced with a brand new skill.
 
 **Level 5: Knight Stance**
 
-- Activated Buff. Removes Duelist Stance. +40 Block, +10 Counter, -100 Dodge, -10 EDR.
+- Activated Buff. Removes Duelist Stance. +40 Block, +10 Counter, -100 Dodge, -10 Enemy Dodge Reduction.
 - Triggers a secondary, separately-removable buff called Parry Magic that grants +51 Magic Reflect with an Upkeep of 2 turns.
 - Passive: +2 Counter Chance and +2 Enemy Dodge Reduction
 
@@ -185,10 +185,11 @@ The old Staves has been entirely ripped out and replaced with a brand new (Wizar
 ### UNARMED [CHANGE]
 
 The old Unarmed has been entirely ripped out and replaced with a brand new skill. Unarmed should be about knockbacks, stuns and multiplying dealt damage. Its key stat is Dodge Chance.
+
 **Level 1: Brawlin' Stance**
 
 - Activated buff. Removes Nerve Strike Stance.
-- All attacks proc 1+(.2 *EDR) Crushing damage and Crushed Bones (see Maces level 1) 20% of the time.
+- All attacks proc 1+(.2 *Enemy Dodge Reduction) Crushing damage and Crushed Bones (see Maces level 1) 20% of the time.
 - Passive: +1 Piercing Damage , +1 Enemy Dodge Reduction, +1 Dodge Chance .
 
 **Level 2: Billy Quan Maneuver**
@@ -212,7 +213,7 @@ The old Unarmed has been entirely ripped out and replaced with a brand new skill
 - Paralysis for 2 turns
 - Crushed Bones (see Maces level 1)
 - Sundered (see Maces level 3)
-- 6+(.2*EDR) Putrefying damage.
+- 6+(.2*Enemy Dodge Reduction) Putrefying damage.
 - Passive: +1 Piercing Damage, +1 Righteous Damage , +1 Dodge Chance
 
 **Level 5: Two Feet Stomp The Diggle**
@@ -250,7 +251,7 @@ The old Throwing has been entirely ripped out and replaced with a brand new (War
 ### MAGIC TRAINING [CHANGE]
 
 - Certified Mage changed to You, D.M.A.:  +4 Savvy, +1 Sagacity.
-- Wizarding Associate changed to Certamen Certified; gives 2 Savvy, 2 Sagacity, and ability to cast Certamen Circle (breakonmove, -100 dodge/counter, -10 EDR/crit, +50 Haywire/MRes/Mref, +8 Magic Regen.)
+- Wizarding Associate changed to Certamen Certified; gives 2 Savvy, 2 Sagacity, and ability to cast Certamen Circle (breakonmove, -100 dodge/counter, -10 Enemy Dodge Reduction/crit, +50 Haywire/MRes/Mref, +8 Magic Regen.)
 - Extraplanar Concenration given an 8% chance to Attract Unwanted Extraplanar Attention.
 - Master of Magic changed to The Master Spell; gives 5 Sagacity, 5 Savvy, and a buff granting +100 Haywire and +10 Magic Power. Buff is removed on cast.
 
@@ -303,7 +304,7 @@ Celestial Aegis no longer has any mana upkeep. (Compare to Mark of the Black Eye
 - Third Sight adds 1 damage that only affects walls.
 - Third Sight now gives a 1-turn buff that allows a 100% proc of Luckiest Find on-kill.
 - Eye Lasers now also trigger On Fire on the target.
-- Eye Lasers now scale 3x Sight on Blasting Damage, 2x TrapSight on Conflagratory damage, and .2x EDR on Aethereal Damage.
+- Eye Lasers now scale 3x Sight on Blasting Damage, 2x TrapSight on Conflagratory damage, and .2x Enemy Dodge Reduction on Aethereal Damage.
 
 ### ARCHEOLOGY [NERF]
 
