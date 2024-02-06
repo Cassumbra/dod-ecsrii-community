@@ -822,7 +822,7 @@
 <ability name="The Montoya Defense" icon="skills/warrior/sword_lore64.png" skill="0" level="4" >
   <secondarybuff id="9" amount="2"/> <!-- EDR -->
   <secondarybuff id="8" amount="2"/> <!-- Counter -->
-  <spell name="The Montoya Defense"/>
+  <spell name="Montoya Cycler"/>
   <description text="Studious research into the use of swords has unlocked terrible secrets: So long as you give up the ability to dodge, you can easily move your sword into the path of almost any -- even magical -- incoming attacks." />
   </ability>
 <ability name="Sword Poet Laureate" icon="skills/warrior/swordplay3_64.png" skill="0" level="5">
@@ -850,7 +850,7 @@
 <ability name="The Stanley Burrell Stance of Hard Beats" icon="skills/skill_mace.png" skill="2" level="2">
   <description text="It's important to keep your mace in tune so you can batter beat-perfect on the big day. Puts you in a stance that reduces enemy damage with every hit."/>
   <damagebuff crushing="3" />
-  <spell name="The Stanley Burrell Stance of Hard Beats"/>
+  <spell name="Maces Mk.2"/>
   </ability>
 <ability name="Ragnar's Meteor" icon="skills/warrior/macery2_64.png" skill="2" level="3">
   <spell name="Ragnar's Meteor"/>
@@ -865,7 +865,7 @@
   </ability>
 <ability name="Mjolnir Stance" icon="skills/warrior/macery3_64.png" skill="2" level="5">                
   <description text="Oh, it's hammer time. This simple but overwhelming stance does nothing...except make you really freaking strong. (Oh, and - very rarely - lighting. Or think of it as sparks flying, if you're one of those fighters-dont-get-magic- powers people.)"/>
-  <spell name="Mjolnir Stance"/>
+  <spell name="Maces Mk.3"/>
   <damagebuff crushing="4" piercing="3"/>
   </ability>
 
@@ -885,7 +885,7 @@
   </ability>
 <ability name="Long Style" icon="skills/skill_staff.png" skill="3" level="2">
   <description text="This staff fighting technique makes you hit longer. And stronger. Not so much with the friction on-ger, but then, no one skill should do everything for you."/>
-  <spell name="Long Style"/>
+  <spell name="Staves Mk.2"/>
   <secondarybuff id="7" amount="2"/> <!-- Block -->
   <secondarybuff id="9" amount="1" /> <!-- EDR -->
   </ability>
@@ -903,7 +903,7 @@
   </ability>
 <ability name="Two Ends Stance" icon="skills/warrior/staff-fighting3_64.png" skill="3" level="5">
   <description text="You believe in staff-control: You use both hands! This stance lets sneak a little extra damage into every attack. With the butt. Of the staff. Buttstaff. No. Staffbutt. Yeah. Staffbutt."/>
-  <spell name="Two Ends Stance"/>
+  <spell name="Staves Mk.3"/>
   <secondarybuff id="7" amount="6"/> <!-- Block -->
   <damagebuff aethereal="3"/>
   </ability>      
@@ -917,19 +917,6 @@
   <primarybuff id="4" amount="2"/>
   <secondarybuff id="6" amount="3"/> <!-- Dodge -->
   </ability>  
-  <!-- No worky.
-<ability name="Billy Quan Maneuver" icon="skills/warrior/unarmed_art0_64.png" skill="6" level="1">
-  <description text="Your continued training pushes you onward to the edge of physical eliteness. Oh, and you've mastered the rare double-footed flying foward kick of Billy Quan; it's excellent for closing with a nearby enemy as long as it's directly in front of you."/>
-  <spell name="Billy Quan Maneuver"/>
-  <secondarybuff id="6" amount="1"/> 
-  <secondarybuff id="9" amount="1"/>
-  <damagebuff piercing="1"/>
-  <primarybuff id="0" amount="2"/>
-  <primarybuff id="2" amount="2"/>
-  <primarybuff id="3" amount="2"/>
-  <primarybuff id="4" amount="2"/>
-  </ability>
-  -->
  <ability name="Punch, Kick: It's All In The Mind" icon="skills/warrior/unarmed_art0_64.png" skill="6" level="1">
   <description text="Your continued training pushes you onward to the edge of physical eliteness by training in mental eliteness. Your calm focus in combat shows you opportunities to drive your opponents flying away from you. Bullies leap forward when using this technique; Monks stay where they are."/>
   <spell name="Turn Kick Pose"/>
@@ -953,7 +940,7 @@
   <playerHitEffectBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Lone Ninja Badassery"/>
   </ability>
 <ability name="Thousand Animal Fists Stance" icon="skills/warrior/unarmed_art2_64.png" skill="6" level="3">
-  <spell name="Thousand Animal Fists Stance"/>
+  <spell name="Thousand Cycler"/>
   <description text="Now we're getting somewhere! While in this stance, many of your strikes will hit your enemy in some vital area, leaving them somehow crippled. Also, your inner energy is starting to become outer energy, infusing your blows with Righteous damage."/>
   <secondarybuff id="6" amount="1"/> <!-- Dodge -->
   <damagebuff piercing="1" righteous="1"/>
@@ -993,9 +980,7 @@
   <secondarybuff id="9" amount="6"/> <!-- EDR -->
   <secondarybuff id="4" amount="1"/> <!-- Crit -->
   <recoverybuff amount="15" />
-  <!-- <crossbowShotBuff percentage="20" name="Watched by the Council"/> a bit crazy -->
-  <!-- <crossbowShotBuff name="Laser Blast" percentage="100"/>-->
-   </ability>
+ </ability>
 <ability name="Keep It Separated, Stupid" icon="skills/fight_in_the_shade64.png" skill="4" level="1">
   <description text="No place for hidin', baby. No place to run. Keeps things separated by allowing a crossbow bolt to hit with many times the force expected, knocking an enemy backwards. Also teaches you to use your crossbow as a battering ram to knock away enemies who get too close. See? Separated. Separated is better." />
   <damagebuff piercing="2"/>
@@ -1010,19 +995,10 @@
   </ability>
 <ability name="Bon Jovi Stance" icon="skills/maverick64.png" skill="4" level="3">
 	<description text="'When you shoot to kill, aim for the heart.'; While in this stance, you have a chance to bore a bolt deep into the flesh of your target." />
-	<!-- and give some relevent stat buffs -->
-	<!--<playerHitEffectBuff percentage="15" name="Maverick Counterattack" />-->
 	<damagebuff piercing="3"/>
-	<spell name="Bon Jovi Stance"/>
+	<spell name="Crossbow Cycler"/>
 	<crossbowshotbuff percentage="29" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Fleshbored!"/>
 	</ability>
-<!-- Put this off 'til later.
-<ability name="Impossible Shot" icon="skills/impossible_shot64.png" skill="4" level="4">
-  <description text="fire a bolt through enemies 'til it hits a wall" />
-  <secondarybuff id="9" amount="2"/>
-  <recoverybuff amount="5" />
-  <spell name="Impossible Shot" />
-  </ability> -->
 <ability name="Queen...of the Crossbow" icon="skills/skill_crossbow.png" skill="4" level="4">
   <description text="It's like being step-sister-in-law to the King of the Bow. Not bad. This skill enhances your damage dealt when wielding the crossbow. Ammo recovery rate is increased."/>
   <secondarybuff id="4" amount="5"/> <!-- Crit -->
@@ -1037,7 +1013,7 @@
   <damagebuff crushing="1"/>
   <secondarybuff id="6" amount="1"/>  <!-- Dodge --> 
   <spell name="Hulky Hurler"/>
-  <thrownBuff percentage="20" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Beaned!"/>
+  <thrownBuff percentage="20" name="Beaned"/>
   </ability>
 <ability name="Monster Toss" icon="skills/monster_toss64.png" skill="5" level="1" >
   <description text="Don't like that monster? Just toss it away! (Recover thrown ammo slightly more often, too.)" />
@@ -1051,31 +1027,20 @@
   <secondarybuff id="6" amount="5"/> <!-- Dodge --> 
   <damagebuff crushing="3"/>
   <recoverybuff amount="30" />
-  <!-- <thrownBuff name="Laser Blast" percentage="100"/> -->
    </ability>
-<!--
-<ability name="Dual Pitcher" icon="skills/dual_pitcher64.png" skill="5" level="2" >
-  <description text="two shots in one turn" />
-  <recoverybuff amount="5" />
-  <spell name="Dual Pitch" />
-  </ability>-->
+
 <ability name="Australian Technique" icon="skills/australian64.png" skill="5" level="3" >
   <description text="The Australian Technique is tricky, but when you pull it off it will cause your weapon to destory your target's bones (or bone-analogues), causing terrible damage by the sheer thrown power of that Southern Land. Even bigger recovery boost." />
   <recoverybuff amount="15" />
   <secondarybuff id="9" amount="2"/> <!-- EDR --> 
   <thrownBuff name="Crushed Bones" percentage="24"/>
   </ability>
-<!--<ability name="Trap Throw" icon="skills/trap_throw64.png" skill="5" level="4" >
-  <description text="throw a trap like a thrown weapon; also gives trap disarm" />
-  <recoverybuff amount="5" />
-  <spell name="Trap Throw" />
-  </ability>-->
 <ability name="Regent of Throwing Stuff At People" icon="skills/warrior/thrown2_64.png" skill="5" level="4">
 	<description text="Though throwing stuff at people is not generally held to be among the nobler of the martial arts, you've managed to bring it a kind of regality. Sort of. Mostly you just throw stuff real hard. Ammo recovery rate is hugely increased."/>
 	<secondarybuff id="9" amount="5"/> <!-- EDR -->
 	<recoverybuff amount="25"/>
 	<damagebuff crushing="3"/> 
-	<spell name="Fastball Specialist Cycler"/>
+	<spell name="Fastball Cycler"/>
 	<thrownBuff percentage="29" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Fleshbore!"/>
 	</ability>
 
@@ -1706,7 +1671,7 @@
    </ability>
 <ability name="Very Sharp Wall of Blades Stance" icon="skills/dagger_defensive64.png" skill="45" level="4" >
    <description text="Who would dare try to breach a wall made of very sharp, very fast blades? This combat stance enhances your ability to block and counter attacks at the cost of raw melee power." />
-   <spell name="Very Sharp Wall of Blades Stance" />
+   <spell name="Sharp Cycler" />
    <damagebuff piercing="1" />
    <secondaryBuff id="9" amount="3" /> <!-- EDR -->
    </ability>
@@ -1741,7 +1706,7 @@
    </ability>
 <ability name="Wallenstein's Inevitable Victory Stance" icon="skills/polearm_offensive64.png" skill="46" level="3" >
    <description text="Enhance your basic damage and deliver especially overwhelming attacks through the power of your inevitable victory. This focus on solid offense does somewhat reduce the chance of countering, blocking, and critical hits, but who needs those?" />
-   <spell name="Wallenstein's Inevitable Victory Stance" />
+   <spell name="Wallenstein Cycler" />
    <!--<secondarybuff id="2" amount="1" />--> <!-- melee power -->
    <secondaryBuff id="9" amount="2" /> <!-- EDR -->
    </ability>

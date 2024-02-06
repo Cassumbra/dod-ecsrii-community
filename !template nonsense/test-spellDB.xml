@@ -1,0 +1,74 @@
+<!--I may have found an If-Then-Else clause for XML in the forums.
+<spell name="Else">
+    <effect type="trigger" spell="C"/>
+</spell>
+ 
+<spell name="stop"/>
+    <buff usetimer="1" timer="0">
+    </buff>
+</spell>
+ 
+<spell name="Then">
+    <effect type="trigger" spell="B"/>
+    <effect type="trigger" spell="stop"/>
+</spell>
+ 
+<spell name="If">
+    <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="A" spell="Then"/>
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="stop" spell="Else"/>
+</spell>
+I need to test this.-->
+
+<spell name="Off Balance" type="self">
+	<buff usetimer="1" time="5" allowstacking="1" stacksize="16" icon="skills/unskilled_weapon.png" smallicon="skills/unskilled_weapon_small.png">
+		<secondarybuff id="8" amount="-2"/>
+		<secondarybuff id="6" amount="-2"/>
+		<secondarybuff id="2" amount="-1"/>
+		<description text="A monster hit you while in Pimpernel's Stance, and now you're off balance. You'll recover shortly."/>
+		</buff>
+	</spell>
+   
+<spell name="Musashi's Duelling Stance" type="self" icon="skills/skill_sword_small.png">
+	<requirements weapon="0"/>
+	<effect type="removebuffbyname" name="The Montoya Defense"/>
+	<buff usetimer="0" allowstacking="0" removable="1" icon="skills/skill_sword.png" smallicon="skills/skill_sword_small.png">
+		<playerHitEffectBuff percentage="100" name="Off Balance"/>
+		<secondarybuff id="8" amount="8"/>
+		<secondarybuff id="6" amount="8"/>
+		<secondarybuff id="2" amount="4"/>
+		<description text="Your fighting style is significantly improved, but only as long as you don't get knocked off-balance by enemy attacks, which will dis-improve it for a short time."/>
+		</buff>
+	<anim sprite="sprites/sfx/null" frames="2" framerate="100" />
+	</spell>
+
+<spell name="The Montoya Defense" type="self" icon="skills/warrior/sword_lore32.png">
+	<requirements weapon="0" />
+	<effect type="removebuffbyname" name="Musashi's Duelling Stance"/>
+	<effect type="removebuffbyname" name="Off Balance" amount="20"/>
+	<buff usetimer="0" allowstacking="0" removable="1" icon="skills/warrior/sword_lore64.png" smallicon="skills/warrior/sword_lore32.png">
+		<secondarybuff id="6" amount="-100"/>
+		<secondarybuff id="9" amount="-10"/>
+		<secondarybuff id="8" amount="10"/>
+		<secondarybuff id="11" amount="10"/>
+		<secondarybuff id="7" amount="40"/>
+		<secondarybuff id="22" amount="40"/>
+		<description text="The Montoya Defense: Why move your body out of the way when you could move your sword INTO the way?"/>
+	</buff>
+	<anim sprite="sprites/sfx/null" frames="2" framerate="100" />
+</spell>
+
+<spell name="Stop" type="self">
+    <buff usetimer="1" timer="0">
+    </buff>
+</spell>
+
+<spell name="Then" type="self">
+    <effect type="trigger" name="The Montoya Defense"/>
+    <effect type="trigger" name="Stop"/>
+</spell>
+
+<spell name="SwordCycler">
+    <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Musashi's Duelling Stance" spell="Then"/>
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Musashi's Duelling Stance"/>
+    <anim sprite="sprites/sfx/null" frames="2" framerate="100" />
+</spell>
