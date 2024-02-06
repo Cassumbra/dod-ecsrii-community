@@ -1024,7 +1024,7 @@
   <damagebuff crushing="1"/>
   <secondarybuff id="6" amount="1"/>  <!-- Dodge --> 
   <spell name="Hulky Hurler"/>
-  <thrownBuff percentage="20" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Beaned!"/>
+  <thrownBuff percentage="20" name="Beaned"/>
   </ability>
 <ability name="Monster Toss" icon="skills/monster_toss64.png" skill="5" level="1" >
   <description text="Don't like that monster? Just toss it away! (Recover thrown ammo slightly more often, too.)" />
