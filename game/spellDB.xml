@@ -4499,6 +4499,16 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <effect type="removebuffbyname" name="Silent Deadly Dagger Sneaky Stance"/>
    </spell>
 
+<spell name="Then Sharp" type="self">
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Very Sharp Wall of Blades Stance"/>
+    <effect type="trigger" spell="Stop"/>
+</spell>
+	
+<spell name="Sharp Cycler" type="self" noanimation="1" downtime="1" icon="skills/polearm_offensive32.png">
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Silent Deadly Dagger Sneaky Stance" spell="Then Sharp"/>
+   <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Silent Deadly Dagger Sneaky Stance"/>
+   </spell>
+
 <spell name="Devouring Wound Technique" type="adjacent" attack="1" downtime="16" icon="skills/thaumitic_strike32.png" >
 	<requirements weapon="7"/>
    <effect type="trigger" spell="Thaumite Infection" />
@@ -4579,6 +4589,16 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="metal_drop" />
 	<description text="Victory is assured! (Probably.)" />
    <effect type="removebuffbyname" name="The Sensible Swiss Defensive Stance"/>
+   </spell>
+
+<spell name="Then Wallenstein" type="self">
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Wallenstein's Inevitable Victory Stance"/>
+    <effect type="trigger" spell="Stop"/>
+</spell>
+	
+<spell name="Wallenstein Cycler" type="self" noanimation="1" downtime="1" icon="skills/polearm_offensive32.png">
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="The Sensible Swiss Defensive Stance" spell="Then Wallenstein"/>
+   <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="The Sensible Swiss Defensive Stance"/>
    </spell>
 
 <spell name="Talhoffer's Lunge Effect" type="adjacent">

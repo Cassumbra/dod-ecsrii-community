@@ -980,9 +980,7 @@
   <secondarybuff id="9" amount="6"/> <!-- EDR -->
   <secondarybuff id="4" amount="1"/> <!-- Crit -->
   <recoverybuff amount="15" />
-  <!-- <crossbowShotBuff percentage="20" name="Watched by the Council"/> a bit crazy -->
-  <!-- <crossbowShotBuff name="Laser Blast" percentage="100"/>-->
-   </ability>
+ </ability>
 <ability name="Keep It Separated, Stupid" icon="skills/fight_in_the_shade64.png" skill="4" level="1">
   <description text="No place for hidin', baby. No place to run. Keeps things separated by allowing a crossbow bolt to hit with many times the force expected, knocking an enemy backwards. Also teaches you to use your crossbow as a battering ram to knock away enemies who get too close. See? Separated. Separated is better." />
   <damagebuff piercing="2"/>
@@ -997,19 +995,10 @@
   </ability>
 <ability name="Bon Jovi Stance" icon="skills/maverick64.png" skill="4" level="3">
 	<description text="'When you shoot to kill, aim for the heart.'; While in this stance, you have a chance to bore a bolt deep into the flesh of your target." />
-	<!-- and give some relevent stat buffs -->
-	<!--<playerHitEffectBuff percentage="15" name="Maverick Counterattack" />-->
 	<damagebuff piercing="3"/>
 	<spell name="Crossbow Cycler"/>
 	<crossbowshotbuff percentage="29" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Fleshbored!"/>
 	</ability>
-<!-- Put this off 'til later.
-<ability name="Impossible Shot" icon="skills/impossible_shot64.png" skill="4" level="4">
-  <description text="fire a bolt through enemies 'til it hits a wall" />
-  <secondarybuff id="9" amount="2"/>
-  <recoverybuff amount="5" />
-  <spell name="Impossible Shot" />
-  </ability> -->
 <ability name="Queen...of the Crossbow" icon="skills/skill_crossbow.png" skill="4" level="4">
   <description text="It's like being step-sister-in-law to the King of the Bow. Not bad. This skill enhances your damage dealt when wielding the crossbow. Ammo recovery rate is increased."/>
   <secondarybuff id="4" amount="5"/> <!-- Crit -->
@@ -1038,25 +1027,14 @@
   <secondarybuff id="6" amount="5"/> <!-- Dodge --> 
   <damagebuff crushing="3"/>
   <recoverybuff amount="30" />
-  <!-- <thrownBuff name="Laser Blast" percentage="100"/> -->
    </ability>
-<!--
-<ability name="Dual Pitcher" icon="skills/dual_pitcher64.png" skill="5" level="2" >
-  <description text="two shots in one turn" />
-  <recoverybuff amount="5" />
-  <spell name="Dual Pitch" />
-  </ability>-->
+
 <ability name="Australian Technique" icon="skills/australian64.png" skill="5" level="3" >
   <description text="The Australian Technique is tricky, but when you pull it off it will cause your weapon to destory your target's bones (or bone-analogues), causing terrible damage by the sheer thrown power of that Southern Land. Even bigger recovery boost." />
   <recoverybuff amount="15" />
   <secondarybuff id="9" amount="2"/> <!-- EDR --> 
   <thrownBuff name="Crushed Bones" percentage="24"/>
   </ability>
-<!--<ability name="Trap Throw" icon="skills/trap_throw64.png" skill="5" level="4" >
-  <description text="throw a trap like a thrown weapon; also gives trap disarm" />
-  <recoverybuff amount="5" />
-  <spell name="Trap Throw" />
-  </ability>-->
 <ability name="Regent of Throwing Stuff At People" icon="skills/warrior/thrown2_64.png" skill="5" level="4">
 	<description text="Though throwing stuff at people is not generally held to be among the nobler of the martial arts, you've managed to bring it a kind of regality. Sort of. Mostly you just throw stuff real hard. Ammo recovery rate is hugely increased."/>
 	<secondarybuff id="9" amount="5"/> <!-- EDR -->
@@ -1693,7 +1671,7 @@
    </ability>
 <ability name="Very Sharp Wall of Blades Stance" icon="skills/dagger_defensive64.png" skill="45" level="4" >
    <description text="Who would dare try to breach a wall made of very sharp, very fast blades? This combat stance enhances your ability to block and counter attacks at the cost of raw melee power." />
-   <spell name="Very Sharp Wall of Blades Stance" />
+   <spell name="Sharp Cycler" />
    <damagebuff piercing="1" />
    <secondaryBuff id="9" amount="3" /> <!-- EDR -->
    </ability>
@@ -1728,7 +1706,7 @@
    </ability>
 <ability name="Wallenstein's Inevitable Victory Stance" icon="skills/polearm_offensive64.png" skill="46" level="3" >
    <description text="Enhance your basic damage and deliver especially overwhelming attacks through the power of your inevitable victory. This focus on solid offense does somewhat reduce the chance of countering, blocking, and critical hits, but who needs those?" />
-   <spell name="Wallenstein's Inevitable Victory Stance" />
+   <spell name="Wallenstein Cycler" />
    <!--<secondarybuff id="2" amount="1" />--> <!-- melee power -->
    <secondaryBuff id="9" amount="2" /> <!-- EDR -->
    </ability>
