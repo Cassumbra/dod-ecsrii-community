@@ -4499,6 +4499,16 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <effect type="removebuffbyname" name="Silent Deadly Dagger Sneaky Stance"/>
    </spell>
 
+<spell name="Then Sharp" type="self">
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Very Sharp Wall of Blades Stance"/>
+    <effect type="trigger" spell="Stop"/>
+</spell>
+	
+<spell name="Sharp Cycler" type="self" noanimation="1" downtime="1" icon="skills/polearm_offensive32.png">
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Silent Deadly Dagger Sneaky Stance" spell="Then Sharp"/>
+   <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Silent Deadly Dagger Sneaky Stance"/>
+   </spell>
+
 <spell name="Devouring Wound Technique" type="adjacent" attack="1" downtime="16" icon="skills/thaumitic_strike32.png" >
 	<requirements weapon="7"/>
    <effect type="trigger" spell="Thaumite Infection" />
@@ -4579,6 +4589,16 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="metal_drop" />
 	<description text="Victory is assured! (Probably.)" />
    <effect type="removebuffbyname" name="The Sensible Swiss Defensive Stance"/>
+   </spell>
+
+<spell name="Then Wallenstein" type="self">
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Wallenstein's Inevitable Victory Stance"/>
+    <effect type="trigger" spell="Stop"/>
+</spell>
+	
+<spell name="Wallenstein Cycler" type="self" noanimation="1" downtime="1" icon="skills/polearm_offensive32.png">
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="The Sensible Swiss Defensive Stance" spell="Then Wallenstein"/>
+   <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="The Sensible Swiss Defensive Stance"/>
    </spell>
 
 <spell name="Talhoffer's Lunge Effect" type="adjacent">
@@ -5071,9 +5091,12 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<effect type="trigger" amount="2" requirebuffonnottrigger="1" requirebuffonnottriggername="The Ballmer Peak" spell="AUEA"/>
 	</spell> 
 	
+<!--This is the Stop spell. It loves you. It will stop anything you want it to. -Manny Pardo-->
+<spell name="Stop" type="self">
+    <buff usetimer="1" timer="0">
+    </buff>
+</spell>
 
-
-   
 <!-- Deadshot 2.0 --> 
 <spell name="Ruined Leg" type="target">
 	<buff usetimer="0" allowstacking="1" self="0" stacksize="4" icon="skills/ruinedleg64.png" smallicon="skills/ruinedleg32.png">
@@ -5154,13 +5177,9 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		</buff>
 	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Deadhit" spell="Ruined Soul"/>
 	</spell>
-	
-<spell name="Remove Soulshot" type="self">
-	<effect type="removebuffbyname" name="Soulshot"/>
-	</spell>
 
 <spell name="Legshot" type="self">
-		<effect type="trigger" spell="Remove Soulshot"/>
+		<effect type="removebuffbyname" name="Soulshot"/>
 	<buff usetimer="0" allowstacking="0" icon="skills/legshot64.png" smallicon="skills/legshot32.png">
 		<description text="You shoot people in the leg. Not the knee - that's important - never the knee. Just the leg. Reduces enemy mobility and defenses."/>
 		<targetHitEffectBuff percentage="25" name="Shot In The Leg"/>
@@ -5169,12 +5188,8 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		</buff>
 </spell> 
 
-<spell name="Remove Legshot" type="self">
-	<effect type="removebuffbyname" name="Legshot"/>
-	</spell>
-
 <spell name="Armshot" type="self">
-		<effect type="trigger" spell="Remove Legshot"/>
+	<effect type="removebuffbyname" name="Legshot"/>
 	<buff usetimer="0" allowstacking="0" icon="skills/armshot64.png" smallicon="skills/armshot32.png">
 		<description text="You shoot people in the arm. Or whatever it is that they attack you with; same difference in the long run. Reduces accuracy and damage."/>
 		<targetHitEffectBuff percentage="25" name="Shot In The Arm"/>
@@ -5183,12 +5198,8 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		</buff>
 </spell> 
 
-<spell name="Remove Armshot" type="self">
-	<effect type="removebuffbyname" name="Armshot"/>
-	</spell>
-
 <spell name="Headshot" type="self">
-		<effect type="trigger" spell="Remove Armshot"/>
+	<effect type="removebuffbyname" name="Armshot"/>
 	<buff usetimer="0" allowstacking="0" icon="skills/headshot64.png" smallicon="skills/headshot32.png">
 		<description text="You shoot people in the head. Unlike in most games, this doesn't result in an instant kill. Sorry. It does, however, lower their HP max and slightly reduce exceptional combat maneuver chances."/>
 		<targetHitEffectBuff percentage="20" name="Shot In The Head"/>
@@ -5197,12 +5208,8 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		</buff>
 </spell> 
 
-<spell name="Remove Headshot" type="self">
-	<effect type="removebuffbyname" name="Headshot"/>
-	</spell>
-
 <spell name="Eyeshot" type="self">
-		<effect type="trigger" spell="Remove Headshot"/>
+	<effect type="removebuffbyname" name="Headshot"/>
 	<buff usetimer="0" allowstacking="0" icon="skills/eyeshot64.png" smallicon="skills/eyeshot32.png">
 		<description text="You shoot people in the eye. Yeah, the eye. Yeah, it's difficult - but if you wanted to do something easy, you wouldn't be hunting down a millenia-old undead psychopath buried thousands of feet below ground in a trap-filled dungeon. Massive damage increases as you become more accurate."/>
 		<targetHitEffectBuff percentage="15" name="Shot In The Eye"/>
@@ -5211,12 +5218,8 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		</buff>
 </spell> 
 
-<spell name="Remove Eyeshot" type="self">
-	<effect type="removebuffbyname" name="Eyeshot"/>
-	</spell>
-
 <spell name="Soulshot" type="self">
-	<effect type="trigger" spell="Remove Eyeshot"/>
+	<effect type="removebuffbyname" name="Eyeshot"/>
 	<buff usetimer="0" allowstacking="0" icon="skills/soulshot64.png" smallicon="skills/soulshot32.png">
 		<description text="You shoot people in the soul. How do you hit a soul with a weapon? Seriously, you're worried about hitting a soul with a weapon, but you're not worried about hitting a gelatinous cube in the LEG? Breaks enemy Magic Resistance down a LOT."/>
 		<targetHitEffectBuff percentage="15" name="Shot In The Soul"/>
@@ -5225,44 +5228,32 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		</buff>
 </spell> 
 
-<spell name="Check For Soulshot" type="self">
-    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Soulshot" spell="Legshot"/>
+<spell name="Then Soulshot" type="self">
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Soulshot"/>
+    <effect type="trigger" spell="Stop"/>
 	</spell>
 
-<spell name="Check For Eyeshot" type="self">
-    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Eyeshot" spell="Check For Soulshot"/>
+<spell name="Then Eyeshot" type="self">
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Eyeshot"/>
+    <effect type="trigger" spell="Stop"/>
 	</spell>
 
-<spell name="Check For Headshot" type="self">
-    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Headshot" spell="Check For Eyeshot"/>
+<spell name="Then Headshot" type="self">
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Headshot"/>
+    <effect type="trigger" spell="Stop"/>
 	</spell>
 
-<spell name="Check For Armshot" type="self">
-    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Armshot" spell="Check For Headshot"/>
-	</spell>
-
-<spell name="Start The Cycle" type="self">
-    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Legshot" spell="Check For Armshot"/>
+<spell name="Then Armshot" type="self">
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Armshot"/>
+    <effect type="trigger" spell="Stop"/>
 	</spell>
 	
-<spell name="Make This Whole Thing Work Please" type="self">
-	<buff usetimer="1" time="0" icon="skills/placeholder64.png" smallicon="skills/placeholder32.png">
-		<description text="U NO SEE THIS EVAR"/>
-		</buff>
-	</spell>
-
-<spell name="And...Success!" type="self">
-	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Make This Whole Thing Work Please" spell="Armshot"/>
-	</spell>
-	
-<spell name="Deadeye" type="self" noanimation="1" downtime="1" icon="skills/warrior/deadshot0_32.png">
-   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Soulshot" spell="Make This Whole Thing Work Please"/>
-   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Soulshot" spell="Legshot"/>
-   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Eyeshot" spell="Soulshot"/>
-   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Headshot" spell="Eyeshot"/>
-   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Armshot" spell="Headshot"/>
-   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Legshot" spell="And...Success!"/>
-   <effect type="trigger" spell="Start The Cycle"/>
+<spell name="Deadeye" type="self" noanimation="1" icon="skills/warrior/deadshot0_32.png">
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Legshot" spell="Then Armshot"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Armshot" spell="Then Headshot"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Headshot" spell="Then Eyeshot"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Eyeshot" spell="Then Soulshot"/>
+   <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Legshot"/>
    </spell>
 
 <spell name="Deadleg" type="target">
@@ -5314,14 +5305,6 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Omniscient Strike" percent="70" spell="Deadhead"/>
 	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Omniscient Strike" percent="60" spell="Deadeyes"/>
 	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Omniscient Strike" percent="60" spell="Deadsoul"/>
-	</spell>
-  
-<spell name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  OmniscientStrikeBadassery" type="target">
-	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Omniscient Strike" percent="80" spell="Shot In The Arm"/>
-	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Omniscient Strike" percent="80" spell="Shot In The Leg"/>
-	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Omniscient Strike" percent="70" spell="Shot In The Head"/>
-	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Omniscient Strike" percent="60" spell="Shot In The Eye"/>
-	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Omniscient Strike" percent="60" spell="Shot In The Soul"/>
 	</spell>
   
 <spell name="Omniscient Strike" downtime="18" noanimation="1" type="self" icon="skills/warrior/deadshot1_32.png">
@@ -5406,48 +5389,38 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		</buff>
 </spell> 
 
-<spell name="Check For Second Soulshot" type="self">
-    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Second Soulshot" spell="Second Legshot"/>
+<spell name="Then Soulshot 2" type="self">
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Second Soulshot"/>
+    <effect type="trigger" spell="Stop"/>
 	</spell>
 
-<spell name="Check For Second Eyeshot" type="self">
-    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Second Eyeshot" spell="Check For Second Soulshot"/>
+<spell name="Then Eyeshot 2" type="self">
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Second Eyeshot"/>
+    <effect type="trigger" spell="Stop"/>
 	</spell>
 
-<spell name="Check For Second Headshot" type="self">
-    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Second Headshot" spell="Check For Second Eyeshot"/>
+<spell name="Then Headshot 2" type="self">
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Second Headshot"/>
+    <effect type="trigger" spell="Stop"/>
 	</spell>
 
-<spell name="Check For Second Armshot" type="self">
-    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Second Armshot" spell="Check For Second Headshot"/>
-	</spell>
-
-<spell name="Start The Cycle " type="self">
-    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Second Legshot" spell="Check For Second Armshot"/>
+<spell name="Then Armshot 2" type="self">
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Second Armshot"/>
+    <effect type="trigger" spell="Stop"/>
 	</spell>
 	
 <!-- Ess' NOTE TO SELF: Give David the Avenge Your Father Small icon. --> 	
 
 <!-- V: This is fucking insane. DO NOT DIFFERENTIATE VARIABLES WITH WHITESPACE. I was already planning on changing how these spells were named earlier, but now I'm *definitely* going to have to.-->
 <!-- TODO: Fix this. -->
-<spell name="Make This Whole Thing Work Please " type="self">
-	<buff usetimer="1" time="0" icon="skills/placeholder64.png" smallicon="skills/placeholder32.png">
-		<description text="U NO SEE THIS EVAR"/>
-		</buff>
-	</spell>
-
-<spell name="And...Success! " type="self">
-	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Make This Whole Thing Work Please " spell="Second Armshot"/>
-	</spell>
+<!--Did it for ya :D -Manny Pardo-->
 	
-<spell name="Second Aim" type="self" downtime="1" noanimation="1" icon="skills/warrior/deadshot0_32.png">
-   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Second Soulshot" spell="Make This Whole Thing Work Please "/>
-   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Second Soulshot" spell="Second Legshot"/>
-   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Second Eyeshot" spell="Second Soulshot"/>
-   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Second Headshot" spell="Second Eyeshot"/>
-   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Second Armshot" spell="Second Headshot"/>
-   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Second Legshot" spell="And...Success! "/>
-   <effect type="trigger" spell="Start The Cycle "/>
+<spell name="Second Aim" type="self" noanimation="1" icon="skills/warrior/deadshot0_32.png">
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Second Legshot" spell="Then Armshot 2"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Second Armshot" spell="Then Headshot 2"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Second Headshot" spell="Then Eyeshot 2"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Second Eyeshot" spell="Then Headshot 2"/>
+   <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Second Legshot"/>
    </spell>
 
    
@@ -5494,30 +5467,15 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<description text="You've figured out the ancient art of swinging your weapon HORIZONTALLY, rather than vertically! (Also, the Dewey Decimal System.)  All your swings affect a half-circle around you to the front."/>
 		</buff>
 	</spell>
-	
-<spell name="Check For I'm OK Stance" type="self">
-    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="The 'And I'm OK!' Stance" spell="Ahnold's Y-Axis Stance"/>
-	</spell>
-	
-<spell name="Ahnold Start Cycle" type="self">
-    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Ahnold's Y-Axis Stance" spell="Check For I'm OK Stance"/>
-	</spell>
-	
-<spell name="Ahnold Work Please" type="self">
-	<buff usetimer="1" time="0" icon="skills/placeholder64.png" smallicon="skills/placeholder32.png">
-		<description text="U NO SEE THIS EVAR"/>
-		</buff>
-	</spell>
 
-<spell name="Ahnold Success!" type="self">
-	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Ahnold Work Please" spell="The 'And I'm OK!' Stance"/>
-	</spell>
+<spell name="Then Ahnold" type="self">
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Ahnold's Y-axis Stance"/>
+    <effect type="trigger" spell="Stop"/>
+</spell>
 	
 <spell name="Ahnold Cycler" type="self" noanimation="1" downtime="1" icon="skills/warrior/deadshot0_32.png">
-   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="The 'And I'm OK!' Stance" spell="Ahnold Work Please"/>
-   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="The 'And I'm OK!' Stance" spell="Ahnold's Y-Axis Stance"/>
-   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Ahnold's Y-Axis Stance" spell="Ahnold Success!"/>
-   <effect type="trigger" spell="Ahnold Start Cycle"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="The 'And I'm OK!' Stance" spell="Then Ahnold"/>
+   <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="The 'And I'm OK!' Stance"/>
    </spell>
 	
 <spell name="Jarlish Armor Destruction" type="target">
@@ -5562,17 +5520,6 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		</buff>
 	</spell>
 
-	<!-- nah
-<spell name="Lunge" downtime="6" type="adjacent" attack="1" icon="skills/warrior/swordplay0_32.png">
-	<requirements weapon="0"/>
-	<effect type="damage" piercing="5" piercingF="1" bleed="1" secondaryScale="2"/>
-	<buff usetimer="1" time="2" allowstacking="1" self="1" icon="skills/warrior/swordplay0_64.png" smallicon="skills/warrior/swordplay0_32.png">
-		<secondarybuff id="6" amount="-50"/>
-		<description text="You've struck home - or made your best attempt at it. Now, for a brief moment, you're off-balance and have a hard time getting out of your enemy's way."/>
-		</buff>
-	</spell>
--->
-	
 <spell name="Liechtenauer's Overhau" downtime="5" type="adjacent" icon="skills/warrior/swordplay1_32.png" >
 	<requirements weapon="0" />
 	<description text="You have a chance to strike your enemies with Teutonic Might! Hits one enemy very hard. Scales to Nimbleness."/>
@@ -5590,7 +5537,8 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		</buff>
 	</spell>
    
-<spell name="Musashi's Duelling Stance" downtime="1" noanimation="1" type="self" icon="skills/skill_sword_small.png">
+<spell name="Musashi's Duelling Stance" type="self" icon="skills/skill_sword_small.png">
+<spell name="Musashi's Duelling Stance" type="self" icon="skills/skill_sword_small.png">
 	<requirements weapon="0"/>
 	<effect type="removebuffbyname" name="The Montoya Defense"/>
 	<buff usetimer="0" allowstacking="0" removable="1" icon="skills/skill_sword.png" smallicon="skills/skill_sword_small.png">
@@ -5600,6 +5548,8 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<secondarybuff id="2" amount="4"/>
 		<description text="Your fighting style is significantly improved, but only as long as you don't get knocked off-balance by enemy attacks, which will dis-improve it for a short time."/>
 		</buff>
+	<anim sprite="sprites/sfx/null" frames="2" framerate="100" />
+	<anim sprite="sprites/sfx/null" frames="2" framerate="100" />
 	</spell>
    
 <spell name="Thibault's Trompement" downtime="9" type="template" templateID="03" anchored="1" icon="skills/warrior/swordplay2_32.png" attack="1">
@@ -5609,7 +5559,8 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centerEffect="0"/>
    </spell>  
 
-<spell name="The Montoya Defense" downtime="1" noanimation="1" type="self" icon="skills/warrior/sword_lore32.png">
+<spell name="The Montoya Defense" type="self" icon="skills/warrior/sword_lore32.png">
+<spell name="The Montoya Defense" type="self" icon="skills/warrior/sword_lore32.png">
 	<requirements weapon="0" />
 	<effect type="removebuffbyname" name="Musashi's Duelling Stance"/>
 	<effect type="removebuffbyname" name="Off Balance" amount="20"/>
@@ -5622,7 +5573,18 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<secondarybuff id="22" amount="40"/>
 		<description text="The Montoya Defense: Why move your body out of the way when you could move your sword INTO the way?"/>
 		</buff>
+	<anim sprite="sprites/sfx/null" frames="2" framerate="100" />
 	</spell>
+
+<spell name="Then Montoya" type="self">
+    <effect type="trigger" spell="The Montoya Defense"/>
+    <effect type="trigger" spell="Stop"/>
+</spell>
+
+<spell name="Montoya Cycler" type="self" noanimation="1">
+    <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Musashi's Duelling Stance" spell="Then Montoya"/>
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Musashi's Duelling Stance"/>
+</spell>
 	
 <spell name="Sword Poetry Attack!" type="target">
 	<effect type="damage" asphyxiative="8" asphyxiativeF=".25" primaryScale="2"/>
@@ -5753,7 +5715,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 
 <spell name="Mjolnir Stance" downtime="1" noanimation="1" type="self" icon="skills/warrior/macery3_32.png">
 <requirements weapon="2"/>
-	<effect type="removebuffbyname" name="Dwarven Handshake Stance"/>
+   <effect type="removebuffbyname" name="Dwarven Handshake Stance"/>
 	<effect type="removebuffbyname" name="The Stanley Burrell Stance of Hard Beats"/>
 	<buff usetimer="0" allowstacking="0" removable="1" icon="skills/warrior/macery3_64.png" smallicon="skills/warrior/macery3_32.png">
 		<primarybuff id="0" amount="30"/>
@@ -5761,7 +5723,30 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<description text="You're as mighty as Thor! You hit like a truck, you're particularly tough to kill, and occasionally your mighty blunt weapon throws a...spark. Yeah, that's it. A spark that scales to Burliness!"/>
 		</buff>
 	</spell>
-	
+
+<spell name="Then Stanley" type="self">
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="The Stanley Burrell Stance of Hard Beats"/>
+    <effect type="trigger" spell="Stop"/>
+	</spell>
+
+<spell name="Then Mjolnir" type="self">
+    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Mjolnir Stance"/>
+    <effect type="trigger" spell="Stop"/>
+	</spell>
+
+<spell name="Maces Mk.2" type="self" noanimation="1" icon="skills/skill_mace_small.png">
+   <requirements weapon="2"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Dwarven Handshake Stance" spell="Then Stanley"/>
+   <effect tyie="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Dwarven Handshake Stance"/>
+</spell>
+
+<spell name="Maces Mk.3" type="self" noanimation="1" icon="skills/warrior/macery3_32.png">
+   <requirements weapon="2"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Dwarven Handshake Stance" spell="Then Stanley"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="The Stanley Burrell Stance of Hard Beats" spell="Then Mjolnir"/>
+   <effect tyie="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Dwarven Handshake Stance"/>
+</spell>
+
 <!-- Staves. Mad props to Null for making Long Stance not suck. --> 
 <spell name="Staggered" type="adjacent">
 	<effect type="paralyze" turns="2"/>
@@ -5819,21 +5804,6 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		</buff>
 	</spell> 
 
-<spell name="Long Style Woad Warrior" type="template" templateID="31" anchored="1">
-	<effect type="damage" aethereal="1" aetherealF=".1"/>
-	</spell>
-	
-<spell name="Two Ends Woad Warrior" type="adjacent">
-	<effect type="damage" aethereal="1" aetherealF=".05"/>
-	</spell>
-	
-<spell name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Woad Warrior" type="adjacent">
-<requirements weapon="3"/>
-	<effect type="damage" aethereal="1" aetherealF=".1"/>
-	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Two Ends Stance" spell="Two Ends Woad Warrior"/>
-	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Long Style" spell="Long Style Woad Warrior"/>
-	</spell>
-	
 <!-- Ess' NOTE TO SELF: Give David the Staff_Secrets_2 files --> 
 <spell name="Two Ends Priming Blow" type="adjacent">
 	<buff usetimer="1" time="60" allowstacking="1" self="0" icon="skills/warrior/staff_secrets_2_64.png" smallicon="skills/warrior/staff_secrets_2_32.png">
@@ -5863,8 +5833,8 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 <effect type="damage" crushing="7" crushingF="1.4" secondaryScale="2" /> <!-- melee power --> 
       <anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="100" centerEffect="0"/>
 </spell>
- 
-<spell name="Long Style" type="self" noanimation="1" downtime="1" icon="skills/warrior/staff-fighting3_32.png">
+
+<spell name="Long Style" type="self" noanimation="1" icon="skills/warrior/staff-fighting3_32.png">
 <requirements weapon="3"/>
 <effect type="removebuffbyname" name="Not In The Face!"/>
 <effect type="removebuffbyname" name="Two Ends Stance"/>
@@ -5874,6 +5844,28 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	</buff>
 </spell>
 
+<spell name="Then Two Ends" type="self">
+   <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Two Ends Stance"/>
+   <effect type="trigger" spell="Stop"/>
+</spell>
+
+<spell name="Then Long" type="self">
+   <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Long Style"/>
+   <effect type="trigger" spell="Stop"/>
+</spell>
+
+<spell name="Staves Mk.2" type="self" noanimation="1" icon="skills/skill_staff_small.png">
+   <requirements weapon="2"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Not In The Face!" spell="Then Long"/>
+   <effect tyie="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Not In The Face!"/>
+</spell>
+
+<spell name="Staves Mk.3" type="self" noanimation="1" icon="skills/warrior/staff-fighting3_32.png">
+   <requirements weapon="2"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Not In The Face!" spell="Then Long"/>
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Long Style" spell="Then Two Ends"/>
+   <effect tyie="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Not In The Face!"/>
+</spell>
 
 <!-- Unarmed --> 
 	
@@ -5892,51 +5884,6 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<description text="You're a bully! Your feet hit hard and often break stuff...like enemy bones. Added damage scales as strikes become more accurate. Also, your body just puts itself together faster."/>
 		</buff> 
 	</spell> 
-
-	
-	<!-- This isn't gonna fly (pun intended) 
-<spell name="Teleport Back One" type="template" templateID="629" anchored="1" noanimation="1" >
-<effect type="teleport" skipanimation="1" />
-<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="100" centerEffect="0"/>
-</spell>
- 
-<spell name="Mind Your Manners!" type="targetmonster" attack="1" >
-    <anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="100" centerEffect="0"/>
-	<effect type="damage" crushing="1" crushingF="1" secondaryScale="2"/>
-    <effect type="trigger" spell="Unresistable Knock"/>
-	</spell>
-	
-<spell name="Billy Flies!" type="targetmonster">
-	<effect type="teleport" skipanimation="1"/>
-	<effect type="trigger" spell="Teleport Back One"/>
-	<effect type="trigger" amount="1" spell="Mind Your Manners!"/>
-	</spell>
-
-<spell name="Billy Quan Missile" type="missile" >
-    <effect type="trigger" spell="Billy Flies!"/>
-</spell>
- 
-<spell name="Billy Quan Maneuver" downtime="4" type="template" templateID="32" anchored="1" icon="skills/warrior/unarmed_art0_32.png" noanimation="1" >
-    <effect type="trigger" spell="Billy Quan Missile"/>
-	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="100" centerEffect="0"/>
-</spell> -->
-
-<!-- Neither is this. 
-<spell name="Mind Your Manners!" type="targetmonster" attack="1" >
-    <anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="100" centerEffect="0"/>
-	<effect type="damage" crushing="1" crushingF="1" secondaryScale="2"/>
-    <effect type="trigger" spell="Unresistable Knock"/>
-	</spell>
-	
-<spell name="Made of Fail" type="self" noanimation="1">
-	<effect type="damage" crushing="4" crushingF="1" secondaryScale="10"/>
-	</spell>
-
-<spell name="Billy Quan Maneuver" downtime="4" type="template" templateID="32" anchored="1" icon="skills/warrior/unarmed_art0_32.png" noanimation="1" >
-	<effect type="playercharge" amount="3" dashhit="Mind Your Manners!" dashmiss="Made Of Fail" interruptable="1"/>
-	</spell> 
-	
--->
 
 <spell name="Teleport Forward One" type="template" templateID="30" anchored="1" noanimation="1" >
 	<effect type="teleport" skipanimation="1" />
@@ -5976,12 +5923,6 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<primarybuff id="2" amount="6"/>
 		<description text="You're a lone ninja, and every enemy that messes with you just makes you that much stronger. Bullies heal in response to getting struck; Monks righteously counterattack in a way that scales to Dodge."/>
 		</buff>
-	</spell>
-	
-<spell name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Lone Ninja Badassery" type="self">
-	<effect type="trigger" spell="Lone Ninja Law"/>
-    <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Bully Stance" spell="I Get Knocked Down And I Get Up Again. You're Never Gonna Keep Me Down!"/>
-	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Thousand Animal Fists Stance" spell="Kwon's Flail"/> 
 	</spell>
 	
 <spell name="Organ Strike" type="target">
@@ -6026,7 +5967,17 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<description text="You're a monk! This stance lets you hit the bad guys in the nuts. Or nut-equivalents. Or in other high-nerve-sensitivity areas, I suppose, but really you just aim for whatever looks like nuts and let fly the foot. Potentially causes a wide variety of negative effects on your target."/>
 		</buff>
 	</spell> 
-	
+
+<spell name="Then Animal" type="self">
+   <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Thousand Animal Fists Stance"/>
+   <effect type="trigger" spell="Stop"/>
+</spell>
+
+<spell name="Thousand Cycler" type="self" noanimation="1" icon="skills/warrior/unarmed_art2_32.png">
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Bully Stance" spell="Then Animal"/>
+   <effect tyie="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Bully Stance"/>
+</spell>
+
 <spell name="Nice Combo!" type="target" attack="1">
    <effect type="damage" crushing="1" crushingF="1.2" primaryScale="2"/>
    <effect type="trigger" spell="Nice Combo!" amount="1" percent="25"/>
@@ -6082,11 +6033,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60"  sfx="impact" centerEffect="0"/>
    </spell>
 
-<spell name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Crossbow Blast!" type="targetmonster">
-	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="KISS Stance" spell="Crossbow Blast"/>
-	</spell>
-
- <spell name="KISS Stance" downtime="1" noanimation="1" type="self" icon="skills/fight_in_the_shade32.png">
+<spell name="KISS Stance" downtime="1" noanimation="1" type="self" icon="skills/fight_in_the_shade32.png">
 	<effect type="removebuffbyname" name="Bon Jovi Stance"/>
 	<buff usetimer="0" allowstacking="0" removable="1" icon="skills/fight_in_the_shade64.png" smallicon="skills/fight_in_the_shade32.png">
 			<description text="Your bolts sometimes knock enemies back, and if an enemy gets too close, you do your best to shove them a way."/>
@@ -6158,11 +6105,8 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 </spell>
 
 <!-- V: Ess, what the fuck is this. Why are you doing this. -->
-<!-- TODO: Figure out if this is necessary and then change it. If it is necessary, add some note so that future folks don't get confused by this insanity. -->
-<spell name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Fleshbored!" type="targetmonster">
-	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Bon Jovi Stance" spell="Fleshbored"/>
-	</spell>
-	
+<!-- Shhhh, it's okay. It's all over. - Manny Pardo -->
+
 <spell name="Bon Jovi Stance" downtime="1" noanimation="1" type="self" icon="skills/maverick32.png">
 	<effect type="removebuffbyname" name="KISS Stance"/>
 	<buff usetimer="0" allowstacking="0" removable="1" icon="skills/maverick64.png" smallicon="skills/maverick32.png">
@@ -6170,16 +6114,21 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		</buff>
 	</spell> 
 
+<spell name="Then Jovi" type="self">
+   <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Bon Jovi Stance"/>
+   <effect type="trigger" spell="Stop"/>
+</spell>
+
+<spell name="Crossbow Cycler" type="self" noanimation="1" icon="skills/warrior/unarmed_art2_32.png">
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="KISS Stance" spell="Then Jovi"/>
+   <effect tyie="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="KISS Stance"/>
+</spell>
  
  <!-- Throwing --> 
  <spell name="Beaned" type="target" >
    <effect type="damage" crushing="1" crushingF="0.25" primaryScale="0"/>
    <effect type="trigger" spell="Unresistable Knock" />
    </spell>
- 
- <spell name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Beaned!" type="targetmonster">
-	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Hulky Hurler" spell="Beaned"/>
-	</spell>
  
  <spell name="Hulky Hurler" noanimation="1" type="self" icon="skills/skill_thrown_small.png" downtime="1">
 	<effect type="removebuffbyname" name="Fastball Specialist"/>
@@ -6188,7 +6137,6 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<description text="You throw hard. Sometimes, people you hit get knocked around a bit. It's a blessing and a curse.  No, really it's pretty much entirely a blessing."/>
 		</buff>
 	</spell> 
-	
  
  <spell name="Monster Toss" type="target" attack="1" downtime="32" icon="skills/monster_toss32.png" >
    <effect type="damage" blasting="1" />
@@ -6196,10 +6144,6 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <effect type="knock" />
    </spell>
 
-<spell name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Fleshbore!" type="target">
-	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Fastball Specialist" spell="Fleshbore"/>
-	</spell> 
-   
 <spell name="Fastball Specialist" type="self" noanimation="1" icon="skills/warrior/thrown2_32.png" downtime="1">
 	<effect type="removebuffbyname" name="Hulky Hurler"/>
 	<buff usetimer="0" allowstacking="0" removable="1" icon="skills/warrior/thrown2_64.png" smallicon="skills/warrior/thrown2_32.png">
@@ -6207,33 +6151,16 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 		<description text="You throw fast. So fast that your weapons bury themselves into the flesh of your enemies, causing serious damage. It's a curse. For them!"/>
 		</buff>
 	</spell>
-	
-<spell name="Check For Hulky Hurler" type="self">
-    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Hulky Hurler" spell="Fastball Specialist"/>
-	</spell>
-	
-<spell name="Fastball Specialist Start Cycle" type="self">
-    <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Fastball Specialist" spell="Check For Hulky Hurler"/>
-	</spell>
-	
-<spell name="Fastball Specialist Work Please" type="self">
-	<buff usetimer="1" time="0" icon="skills/placeholder64.png" smallicon="skills/placeholder32.png">
-		<description text="U NO SEE THIS EVAR"/>
-		</buff>
-	</spell>
 
-<spell name="Fastball Specialist Success!" type="self">
-	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Fastball Specialist Work Please" spell="Hulky Hurler"/>
-	</spell>
-	
-<spell name="Fastball Specialist Cycler" type="self" noanimation="1" downtime="1" icon="skills/warrior/deadshot0_32.png">
-   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Hulky Hurler" spell="Fastball Specialist Work Please"/>
-   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Hulky Hurler" spell="Fastball Specialist"/>
-   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Fastball Specialist" spell="Fastball Specialist Success!"/>
-   <effect type="trigger" spell="Fastball Specialist Start Cycle"/>
-   </spell>
+<spell name="Then Fastball" type="self">
+   <effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Fastball Specialist"/>
+   <effect type="trigger" spell="Stop"/>
+</spell>
 
-
+<spell name="Fastball Cycler" type="self" noanimation="1" icon="skills/warrior/thrown2_32.png">
+   <effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Hulky Hurler" spell="Then Fastball"/>
+   <effect tyie="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Stop" spell="Hulky Hurler"/>
+</spell>
 
 <!-- Inverse Minion Law (for Dual Wield). Lots of fun mixing this with Lone Ninja Law. --> 
 	
