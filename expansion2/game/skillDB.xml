@@ -2,7 +2,7 @@
 	
 <!-- Clockwork Knights by Ruigi-->
 
-<skill name="Clockwork Knight" id="41" type="warrior" achievement="ACHIEVEMENT_CLOCKWORK_KNIGHT_MASTERY" description="You're armed with the latest in modern steam-powered military hardware. GLORY TO THE EMPIRE! (Tinkering and Smithing will improve your mechanical attacks.)">
+<skill name="Clockwork Knight" id="41" type="warrior" achievement="ACHIEVEMENT_CLOCKWORK_KNIGHT_MASTERY" description="You're armed with the latest in modern steam-powered military hardware. GLORY TO THE EMPIRE!">
   <art icon="skills/clockwork_knight64.png"/>
   <loadout type="armour" subtype="Leather Cap With A Cog On It" always="1"/>
 </skill>
@@ -51,7 +51,7 @@
 
 <!-- Clockwork Rogue by Ruigi -->
 
-<skill name="Rogue Scientist" id="42" type="rogue" achievement="ACHIEVEMENT_SCIENCE_ROGUE_MASTERY"  description="No, you don't study rogues. Rather, you employ radical theories of cutting-edge thaumechanics and alchemical engineering. (Tinkering, Wandcrafting and Alchemy will improve your scientific attacks.)">
+<skill name="Rogue Scientist" id="42" type="rogue" achievement="ACHIEVEMENT_SCIENCE_ROGUE_MASTERY"  description="No, you don't study rogues. Rather, you employ radical theories of cutting-edge thaumechanics and alchemical engineering.">
 	<art icon="skills/clockwork_rogue64.png"/>
 	<loadout type="wand" subtype="Sonic Wand" always="1"/>
 	<loadout type="weapon" subtype="Acid Flask" amount="2" always="1"/>
@@ -150,7 +150,7 @@
 
 <!-- Warlock by Essence -->
 
-<skill name="Warlockery" id="44" type="wizard" achievement="ACHIEVEMENT_WARLOCK_MASTERY"  description="Warlocks are wizards that really wish they were warriors. Or rogues. Or cheesemongers. Anything but wizards, really. Their 'spells' (as they are) serve to make them less wizard-like in a variety of ways.">
+<skill name="Warlockery" id="44" type="wizard" achievement="ACHIEVEMENT_WARLOCK_MASTERY"  description="Warlocks are wizards that really wish they were warriors. Or rogues. Or cheesemongers. Anything but wizards, really.">
   <loadout type="armour" subtype="Aluminum Wizarding Hat" always="1" /> <!-- check this --> 
   <art icon="skills/warlockery64.png" /> 
   </skill>
