@@ -2256,7 +2256,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 <spell name="Ancient Kronian Ritual" downtime="128" type="target" icon="skills/rogue/skill_archaeology1_32.png">
    <effect type="rechargeanvil"/>
    <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="magic_damage"/>
-   <description text="Recharges an anvil of Kron. The sad thing is, the Ancient Kronian Ritual mainly consists of sitting around the Anvil moping, drinking beer and complaining about why you can't get any Ancient Kronian Women."/>
+   <description text="Recharges an anvil of Krong. The sad thing is, the Ancient Kronian Ritual mainly consists of sitting around the Anvil moping, drinking beer and complaining about why you can't get any Ancient Kronian Women."/>
    </spell>
 <spell name="This Translation Is All Wrong!" downtime="80" type="item" consumeItem="0" consumeItemType="artifact" icon="skills/rogue/skill_archaeology2_32.png">
    <description text="Does anyone here speak English? Or even Greek?"/>
@@ -4103,7 +4103,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 <spell name="I'm Not Left Handed" type="self" >
    <buff usetimer="1" time="2" icon="skills/warrior/swordplay3_64.png" smallicon="skills/warrior/swordplay3_32.png">
       <secondaryBuff id="8" amount="16" /> 
-      <description text="By switching hands unexpectly you are able to launch startling, unsettling counteroffensives." /> 
+      <description text="By switching hands unexpectedly you are able to launch startling, unsettling counteroffensives." /> 
       </buff>
    </spell>
 
@@ -5211,7 +5211,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 <spell name="Eyeshot" type="self">
 	<effect type="removebuffbyname" name="Headshot"/>
 	<buff usetimer="0" allowstacking="0" icon="skills/eyeshot64.png" smallicon="skills/eyeshot32.png">
-		<description text="You shoot people in the eye. Yeah, the eye. Yeah, it's difficult - but if you wanted to do something easy, you wouldn't be hunting down a millenia-old undead psychopath buried thousands of feet below ground in a trap-filled dungeon. Massive damage increases as you become more accurate."/>
+		<description text="You shoot people in the eye. Yeah, the eye. Yeah, it's difficult - but if you wanted to do something easy, you wouldn't be hunting down a millennia-old undead psychopath buried thousands of feet below ground in a trap-filled dungeon. Massive damage increases as you become more accurate."/>
 		<targetHitEffectBuff percentage="15" name="Shot In The Eye"/>
 		<crossbowBuff percentage="10" name="Shot In The Eye"/>
 		<thrownBuff percentage="10" name="Shot In The Eye"/>
@@ -5309,7 +5309,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
   
 <spell name="Omniscient Strike" downtime="18" noanimation="1" type="self" icon="skills/warrior/deadshot1_32.png">
 	<buff usetimer="0" attacks="1" icon="skills/warrior/deadshot1_64.png" smallicon="skills/warrior/deadshot1_32.png">
-		<description text="Hit ALL The Hitty Places! Once. (All hits still subject to user error and/or sweet skillz. Melee, thrown, and crossbow attacks only. Void where prohibited and in Nunavut. Does not make user omniscient."/>
+		<description text="Hit ALL The Hitty Places! Once. (All hits still subject to user error and/or sweet skillz. Melee, thrown, and crossbow attacks only. Void where prohibited and in Nunavut. Does not make user omniscient.)"/>
 		<secondarybuff id="9" amount="20"/>
 		</buff>
 	</spell>

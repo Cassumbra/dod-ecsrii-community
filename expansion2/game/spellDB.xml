@@ -799,7 +799,7 @@
 <spell name="Alchemical Toxin Canister" downtime="90" type="targetfloor" icon="skills/gas_canister32.png" wand="0">
    <effect type="trigger" spell="Gas Canister Shot" />
    <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sync="1" sfx="swing" framerate="5"  centerEffect="1"/>
-   <description text="You toss a crafted an alchemical grenade which releases weaponized alchemical spirits. Try to avoid throwing it directly at your enemies as the grenade has a tendancy to ricochet. The gas is deadlier as your alchemy skill improves. Avoid contact with eyes." />
+   <description text="You toss a crafted an alchemical grenade which releases weaponized alchemical spirits. Try to avoid throwing it directly at your enemies as the grenade has a tendency to ricochet. The gas is deadlier as your alchemy skill improves. Avoid contact with eyes." />
 	</spell>
 	<!-- modders are insane; see above - dgb -->
 	
@@ -1064,7 +1064,7 @@
 
 <spell name="Quake" downtime="96" type="adjacent" icon="skills/quake32.png" >
 	<effect type="trigger" spell="Earthquake Self"/>
-	<description text="The roots of the earth itself shall tremble and quake to quel your enemies! Stuns and dazes all nearby. Those closest are more affected."/>
+	<description text="The roots of the earth itself shall tremble and quake to quell your enemies! Stuns and dazes all nearby. Those closest are more affected."/>
 	<ai hint="target"/>
 	</spell>
 	

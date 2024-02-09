@@ -416,7 +416,7 @@
 	</ability>
  
 <ability name="Linewalker" icon="skills/wizard/leylines0_64.png" skill="24" level="0">
-  <description text="You have the ability to tap theinvisible strands of power which bind the world and the aether together. Increases mana regeneration and grants a chance to regain mana when casting spells."/>
+  <description text="You have the ability to tap the invisible strands of power which bind the world and the aether together. Increases mana regeneration and grants a chance to regain mana when casting spells."/>
   <secondarybuff id="14" amount="1"/> <!-- mana regen -->
   <triggeroncast percent="25" name="Regen Mana 1"/>
   </ability>
@@ -648,7 +648,7 @@
   </ability>
 <ability name="Eldritch Inhabitation" icon="skills/spells/eldritch_pillar64.png" skill="18" level="4">
   <spell name="Eldritch Inhabitation"/>
-  <description text="This spell posseses the target with a being not fit for this reality; it will tear its way back to where it came however it can, with predictably destructive results."/>
+  <description text="This spell possesses the target with a being not fit for this reality; it will tear its way back to where it came however it can, with predictably destructive results."/>
   <resistbuff necromantic="1"/>
   </ability>
 <ability name="Tenebrous Rift" icon="skills/spells/tenebrous_rift64.png" skill="18" level="5">
@@ -710,7 +710,7 @@
   </ability>
 <ability name="Celestial Aegis" icon="skills/spells/celestial_aegis64.png" skill="20" level="4">
   <spell name="Celestial Aegis"/>
-  <description text="With this shield of astrological power, the forces of the cosmos protect you. Usually. The effect will dissapate if you are hit, and requires mana to keep active."/>
+  <description text="With this shield of astrological power, the forces of the cosmos protect you. Usually. The effect will dissipate if you are hit, and requires mana to keep active."/>
   <resistbuff aethereal="1"/>
   </ability>
 <ability name="The Stars Aligned" icon="skills/spells/stars_aligned64.png" skill="20" level="5">
@@ -864,7 +864,7 @@
   <targetHitEffectBuff percentage="11" name="SMASH!"/>
   </ability>
 <ability name="Mjolnir Stance" icon="skills/warrior/macery3_64.png" skill="2" level="5">                
-  <description text="Oh, it's hammer time. This simple but overwhelming stance does nothing...except make you really freaking strong. (Oh, and - very rarely - lighting. Or think of it as sparks flying, if you're one of those fighters-dont-get-magic- powers people.)"/>
+  <description text="Oh, it's hammer time. This simple but overwhelming stance does nothing...except make you really freaking strong. (Oh, and - very rarely - lighting. Or think of it as sparks flying, if you're one of those fighters-don't-get-magic- powers people.)"/>
   <spell name="Maces Mk.3"/>
   <damagebuff crushing="4" piercing="3"/>
   </ability>
@@ -1409,7 +1409,7 @@
   <resistbuff toxic="1"/>
   </ability>
 <ability name="Slime-herder" icon="skills/rogue/fungus1_64.png" skill="28" level="1">
-  <description text="By studying the lore of the Slime-herders from the Mushroom Jungles of Smome, you gain the ability to summon a fiercly loyal mushroom-beast. You can also plant a greater variety of fungi."/>
+  <description text="By studying the lore of the Slime-herders from the Mushroom Jungles of Smome, you gain the ability to summon a fiercely loyal mushroom-beast. You can also plant a greater variety of fungi."/>
   <spell name="Summon Slime"/>
   <targetKillBuff name="Fungling" percentage="14" />
   <resistbuff toxic="1"/>
