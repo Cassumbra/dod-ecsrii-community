@@ -5,6 +5,9 @@ Repo for community additions/tweaks to [Essential Core Skills Rebalance II](http
 # Changes to the original mod
 
 ### In progress
+- Veganism will be refurbished into a new skill which lets you tame animals instead of punishing you for eating.
+
+### Tested and ready for action
 - Newer stances let you cycle between themselves and their old stances without having to keep both on your hotbar.
 
 # ECSRII Notes.txt
