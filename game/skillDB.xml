@@ -31,7 +31,7 @@
   
   -->
 
-<skill name="Swords" id="0" type="warrior" achievement="ACHIEVEMENT_SWORD_MASTERY" description="Can you solve the Riddle of Steel? Unfortunately, no - but you get combat bonuses and special attacks when wielding swords.">
+<skill name="Swords" id="0" type="warrior" achievement="ACHIEVEMENT_SWORD_MASTERY" description="Can you solve the Riddle of Steel? Unfortunately, no - but slice, parry, and riposte like a true Highlander... just without all the annoying immortality and constant lightning.">
    <art icon="skills/skill_sword.png"/>
   <tag level="0" name="Slasher"/>
   <tag level="3" name="Fencer"/>
@@ -46,12 +46,12 @@
     <loadout type="weapon" subtype="Shiv" always="1" />
 </skill>
 
-<skill name="Axes" id="1" type="warrior" achievement="ACHIEVEMENT_AXE_MASTERY" description="You get combat bonuses and special attacks when wielding axes.">
+<skill name="Axes" id="1" type="warrior" achievement="ACHIEVEMENT_AXE_MASTERY" description="Hack enemy formations into kibbles. Hack defenses to bits. Hack the game's bits so you get more crits. Kibbles and bits and bits and crits!">
    <art icon="skills/skill_axe.png"/>
    <loadout type="weapon" subtype="Crude Stone Axe" always="1"/>
 </skill>
 
-<skill name="Maces" id="2" type="warrior" achievement="ACHIEVEMENT_MACE_MASTERY" description="You get combat bonuses and special attacks when wielding maces.">
+<skill name="Maces" id="2" type="warrior" achievement="ACHIEVEMENT_MACE_MASTERY" description="Hit things impossibly hard, like only a woody spice halfway between nutmeg and cayenne can.">
    <art icon="skills/skill_mace.png"/>
    <loadout type="weapon" subtype="Gnarled Club" always="1"/>
    </skill>
@@ -61,12 +61,12 @@
     <loadout type="weapon" subtype="Peasantly Pitchfork" always="1" />
   </skill>
 
-  <skill name="Staves" id="3" type="wizard" achievement="ACHIEVEMENT_STAFF_MASTERY" description="You get combat bonuses and special attacks when wielding staves.">
+  <skill name="Staves" id="3" type="wizard" achievement="ACHIEVEMENT_STAFF_MASTERY" description="'Cause they're long, and they're strong, and they're down to get the Magic-Power-based-melee contradiction on!">
    <art icon="skills/skill_staff.png"/>
    <loadout type="weapon" subtype="Hefty Stick" always="1"/>
    </skill>
 
-<skill name="Archery" id="4" type="rogue" achievement="ACHIEVEMENT_BOW_MASTERY" description="You get combat bonuses and special attacks when wielding crossbows.">
+<skill name="Archery" id="4" type="rogue" achievement="ACHIEVEMENT_BOW_MASTERY" description="Blast your enemies from afar with your snipery skills. (This skill lovingly sponsored by the Bolt Council. Join us today, or we'll put a squid in your bed.)">
    <art icon="skills/skill_crossbow.png"/>
    <loadout type="weapon" subtype="Small Crossbow" always="1"/>
    <loadout type="weapon" subtype="Wooden Bolt" amount="18" always="1"/>
@@ -75,52 +75,52 @@
    <!-- <loadout type="armour" subtype="Parachute Pants" always="1"/> U can't have this -->
    </skill>
 
-<skill name="Thrown Weaponry" id="5" type="rogue" achievement="ACHIEVEMENT_THROWN_MASTERY" description="You get combat bonuses and special attacks when wielding thrown weaponry.">
+<skill name="Thrown Weaponry" id="5" type="rogue" achievement="ACHIEVEMENT_THROWN_MASTERY" description="Throw a tantrum. Better yet, throw something with sharp edges. Or maybe even something that explodes into sharp fragments!">
    <art icon="skills/skill_thrown.png"/>
    <loadout type="weapon" subtype="Dwarven Boomerang" amount="16" always="1"/>
    <loadout type="weapon" subtype="Acid Flask" amount="3" always="1"/>
    <loadout type="weapon" subtype="Concussion Bomb" amount="5" />
    </skill>
 
-<skill name="Unarmed Combat" id="6" type="warrior" achievement="ACHIEVEMENT_UNARMED_MASTERY" description="You get combat bonuses and special attacks when engaged in foot-based unarmed combat.">
+<skill name="Unarmed Combat" id="6" type="warrior" achievement="ACHIEVEMENT_UNARMED_MASTERY" description="Stun your enemies and send them flying with the light that shines from deep within your sole!">
    <art icon="skills/skill_unarmed.png"/>
    <loadout type="armour" subtype="Hachimaki"/>
    </skill>
 
-<skill name="Dual Wielding" id="7" type="warrior"  achievement="ACHIEVEMENT_DUAL_WIELD_MASTERY" description="You can effectively wield one weapon in each hand.">
+<skill name="Dual Wielding" id="7" type="warrior"  achievement="ACHIEVEMENT_DUAL_WIELD_MASTERY" description="What's better than one weapon? Two weapons at the very same time!">
    <art icon="skills/skill_dualwield.png"/>
    </skill>
 
-<skill name="Shield Bearer" id="8" type="warrior" achievement="ACHIEVEMENT_SHIELD_MASTERY"  description="You get combat bonuses and special attacks when using shields.">
+<skill name="Shield Bearer" id="8" type="warrior" achievement="ACHIEVEMENT_SHIELD_MASTERY"  description="Return with your shield - or under it? For the defense-minded adventurer.">
    <art icon="skills/skill_shieldbearer.png"/>
    <loadout type="armour" subtype="Wooden Shield"/>
    </skill>
 
-<skill name="Berserker Rage" id="9" type="warrior" achievement="ACHIEVEMENT_BERSERKER_MASTERY" description="As you attack, or are yourself attacked, your berserk rage increases your fighting power.">
+<skill name="Berserker Rage" id="9" type="warrior" achievement="ACHIEVEMENT_BERSERKER_MASTERY" description="Do it! Do it for Crom!">
    <art icon="skills/skill_berserker.png"/>
    </skill>
 
-<skill name="Artful Dodger" id="10" type="rogue" achievement="ACHIEVEMENT_DODGE_MASTERY" description="You can evade enemy attacks more easily, and can leap about the dungeon.">
+<skill name="Artful Dodger" id="10" type="rogue" achievement="ACHIEVEMENT_DODGE_MASTERY" description="The best defense is to be somewhere else.">
    <art icon="skills/skill_dodging.png"/>
     <loadout type="armour" subtype="Flippy Floppies"/>
    </skill>
 
-<skill name="Master of Arms" id="11" type="warrior" achievement="ACHIEVEMENT_MASTER_OF_ARMS_MASTERY" description="You can use armour more effectively, and can employ defensive maneuvers.">
+<skill name="Master of Arms" id="11" type="warrior" achievement="ACHIEVEMENT_MASTER_OF_ARMS_MASTERY" description="The Armorial Art revolves around gracefully strapping large chunks of metal to your body.">
    <art icon="skills/skill_armour.png"/>
    <loadout type="armour" subtype="Iron Breastplate"/>
    </skill>
 
-<skill name="Deadshot" id="12" type="warrior" deprecated="1" achievement="ACHIEVEMENT_DEADSHOT_MASTERY" description="You are less likely to miss, and when you hit you have an increased opportunity to deal terrible wounds.">
+<skill name="Deadshot" id="12" type="warrior" deprecated="1" achievement="ACHIEVEMENT_DEADSHOT_MASTERY" description="Aim deadly and true. You'd think it was common sense that hitting your target would enhance combat performance, right?">
    <art icon="skills/skill_deadshot.png"/>
    <loadout type="armour" subtype="Spectacles"/>
 </skill>
 
-<skill name="Vampirism" id="13" type="wizard" achievement="ACHIEVEMENT_VAMPIRE_MASTERY" description="You do not heal naturally and gain no benefit from food, but instead regain your health by killing things and drinking their blood. Also, sparkles.">
+<skill name="Vampirism" id="13" type="wizard" achievement="ACHIEVEMENT_VAMPIRE_MASTERY" description="Quench that insatiable thirst with the tingly life-fluid of your enemies. As a vampire, you can only heal by unnatural means. Also, sparkles.">
    <art icon="skills/skill_vampirism.png"/>
    <flags noFood="1" />
    </skill>
 
-<skill name="Golemancy" id="14" type="wizard" achievement="ACHIEVEMENT_GOLEMANCY_MASTERY" description="You create golems!">
+<skill name="Golemancy" id="14" type="wizard" achievement="ACHIEVEMENT_GOLEMANCY_MASTERY" description="The Greater and Lesser Golemantic Arts pertain to the animation and subsequent irritation of base matter.">
    <art icon="skills/skill_golemancer.png"/>
    <loadout type="armour" subtype="Golemancer's Cap"/>
    </skill>
@@ -130,47 +130,47 @@
    <loadout type="food" subtype="Offal" amount="3" />
    </skill>
 
-<skill name="Mathemagic" id="16" type="wizard" achievement="ACHIEVEMENT_MATHEMAGIC_MASTERY" description="Arithmancers of the universe, unite!">
+<skill name="Mathemagic" id="16" type="wizard" achievement="ACHIEVEMENT_MATHEMAGIC_MASTERY" description="Using the power of Mathemagic you can multiply power, subtract hope, and cube-root the dreams of man himself. This is a strange, abstract school of magic that has a way of driving its users insane.">
    <art icon="skills/skill_mathemagic.png"/>
    <loadout type="armour" subtype="Coat of Tweed"/>
    </skill>
 
-<skill name="Psionics" id="17" type="wizard" achievement="ACHIEVEMENT_PSIONICS_MASTERY"  description="No, not the mind probe!">
+<skill name="Psionics" id="17" type="wizard" achievement="ACHIEVEMENT_PSIONICS_MASTERY"  description="&quot;You will be able to paralyze nerves, shatter bones, set fires, suffocate an enemy or burst his organs...&quot;">
    <art icon="skills/skill_psionicist.png"/>
    </skill>
 
-<skill name="Necronomiconomics" type="wizard" id="18" achievement="ACHIEVEMENT_NECRONOMICONOMICS_MASTERY" description="Necronomiconomics: the economy of the Undead.">
+<skill name="Necronomiconomics" type="wizard" id="18" achievement="ACHIEVEMENT_NECRONOMICONOMICS_MASTERY" description="Necronomiconomics: The study of economic principles of the dead, taught from the book bound with strange leather. A shady magic indeed.">
    <art icon="skills/skill_necronomiconomics.png"/>
    </skill>
 
-<skill name="Viking Wizardry" type="wizard" id="19" achievement="ACHIEVEMENT_VIKING_WIZARD_MASTERY"  description="Hail Odin!">
+<skill name="Viking Wizardry" type="wizard" id="19" achievement="ACHIEVEMENT_VIKING_WIZARD_MASTERY"  description="In the cold Northlands they fostered harsh - but fair - magicks particularly useful in close combat. Hail Odin!">
    <art icon="skills/skill_vikingwizard.png"/>
    </skill>
 
-<skill name="Astrology" id="20" type="wizard" achievement="ACHIEVEMENT_ASTROLOGY_MASTERY" description="When they ask you where you're born, you put down Saturn.">
+<skill name="Astrology" id="20" type="wizard" achievement="ACHIEVEMENT_ASTROLOGY_MASTERY" description="Magic dots in the sky shall lead the way to True Knowledge! This is a generally nonviolent magic, not that you can't get a little imaginative of course ... ">
    <art icon="skills/skill_astrologer.png"/>
    <loadout type="armour" subtype="Astrologer's Hat"/>
    </skill>
 
-<skill name="Promethean Magic" type="wizard" id="21" achievement="ACHIEVEMENT_PROMETHEAN_MASTERY" description="Promethean Magic is the branch of magic that deals with giving fire to people, by any means necessary.">
+<skill name="Promethean Magic" type="wizard" id="21" achievement="ACHIEVEMENT_PROMETHEAN_MASTERY" description="Harness the power of The Ever-Burning, said by the great sages to gently barbeque the void-which-binds-the-worlds. This is all about giving fire to people, by any means necessary.">
    <art icon="skills/skill_prometheanmagic.png"/>
    </skill>
 
-<skill name="Magic Training" type="wizard" id="22" achievement="ACHIEVEMENT_MAGIC_TRAINING_MASTERY" description="Years of Wizard School has made your spells and use of mana more effective.">
+<skill name="Magic Training" type="wizard" id="22" achievement="ACHIEVEMENT_MAGIC_TRAINING_MASTERY" description="(Irreverent Potter quote here)">
    <art icon="skills/skill_magictraining.png"/>
    <loadout type="armour" subtype="Cracked Orb" />
    </skill>
 
-<skill name="Blood Mage"  type="wizard" id="23" achievement="ACHIEVEMENT_BLOOD_MAGIC_MASTERY"  description="You regain magic points by killing things. Every time you kill something, you regain some mana.">
+<skill name="Blood Mage"  type="wizard" id="23" achievement="ACHIEVEMENT_BLOOD_MAGIC_MASTERY"  description="Gain magical power through the blood of your enemies. Makes magic a much messier affair. Not a good conversation-starter.">
    <art icon="skills/skill_bloodmagic.png"/>
    <loadout type="weapon" subtype="Sacrificial Dagger" />
    </skill>
 
-<skill name="Ley Walker" id="24" type="wizard" achievement="ACHIEVEMENT_LEY_LINES_MASTERY" description="You can tap into lines of invisible force to quickly regain magic power.">
+<skill name="Ley Walker" id="24" type="wizard" achievement="ACHIEVEMENT_LEY_LINES_MASTERY" description="Allows you to pulls energy from mysterious magical confluences whose exact mechanisms are known only to the wizened keepers of magical mysteries and retail zoning auditors.">
   <art icon="skills/skill_leylines.png"/>
   </skill>
 
-  <skill name="Perception" id="25"  type="rogue" achievement="ACHIEVEMENT_PERCEPTION_MASTERY" description="You have good eyesight, and are more likely to be able to find traps and hit enemies.">
+<skill name="Perception" id="25"  type="rogue" achievement="ACHIEVEMENT_PERCEPTION_MASTERY" description="Seeing it coming, at least you'll know what hit you. Improves sight distance, trap-finding, actually hitting enemies, loot-finding, and occasionally dodging.">
   <art icon="skills/skill_perception.png"/>
    <loadout type="misc" subtype="lockpick" always="1"/>
    <loadout type="misc" subtype="lockpick" always="1"/>
@@ -178,7 +178,7 @@
    <loadout type="misc" subtype="lockpick" always="1"/>
    </skill>
 
-  <skill name="Burglary" id="26" type="rogue" achievement="ACHIEVEMENT_BURGLARY_MASTERY" description="You can sneak around the dungeon, avoiding monster attention and occasionally stealing items.">
+<skill name="Burglary" id="26" type="rogue" achievement="ACHIEVEMENT_BURGLARY_MASTERY" description="They'll never know you were even there! This is a sneaky, stealy skill.">
   <art icon="skills/skill_stealth.png"/>
    <loadout type="misc" subtype="lockpick" always="1"/>
    <loadout type="misc" subtype="lockpick" always="1"/>
@@ -190,18 +190,18 @@
    <loadout type="misc" subtype="lockpick" always="1"/>
    </skill>
 
-<skill name="Assassination" id="27" type="rogue" achievement="ACHIEVEMENT_ASSASSINATION_MASTERY" description="You deal critical blows to monsters more often.">
+<skill name="Assassination" id="27" type="rogue" achievement="ACHIEVEMENT_ASSASSINATION_MASTERY" description="Something about a creed. Honestly? You just kill better.">
    <art icon="skills/skill_assassination.png"/>
    </skill>
 
-<skill name="Fungal Arts" id="28" type="rogue" achievement="ACHIEVEMENT_FUNGUS_MASTERY"  description="You grow strange mushrooms and are more resistant to the effects of poison and putrefaction.">
+<skill name="Fungal Arts" id="28" type="rogue" achievement="ACHIEVEMENT_FUNGUS_MASTERY"  description="You collect molds, spores, and fungus and plant them on the corpses of your enemies to see what useful grows out of it. Icky.">
    <art icon="skills/skill_mushroomlore.png"/>
    <loadout type="mushroom" always="1" amount="3"/>
    <loadout type="mushroom" always="1" amount="2"/>
    <loadout type="mushroom" always="1" amount="1"/>
    </skill>
 
-<skill name="Alchemy" id="29" type="wizard" achievement="ACHIEVEMENT_ALCHEMY_MASTERY" description="You can create potions, are generally very clever, and occasionally enjoy consuming large quantities of mercury.">
+<skill name="Alchemy" id="29" type="wizard" achievement="ACHIEVEMENT_ALCHEMY_MASTERY" description="You can bottle fame, brew glory, even put a stopper on death, and occasionally enjoy consuming large quantities of mercury.">
    <art icon="skills/skill_alchemy.png"/>
    <loadout type="potion"  always="1" />
    <loadout type="reagent" amount="1"  always="1" />
@@ -216,7 +216,7 @@
 
   <!-- these may look wrong. But sadly, they're right. There was a bit of a mess around version 1.0.2 or so which Oldbies will remember. -->
   
-<skill name="Wand Lore" id="30" type="wizard" achievement="ACHIEVEMENT_ARCHAEOLOGY_MASTERY" description="You can use and manipulate wands more effectively.">
+<skill name="Wand Lore" id="30" type="wizard" achievement="ACHIEVEMENT_ARCHAEOLOGY_MASTERY" description="The knowledge of properly polishing a wand may extend its working life and enhance the abilities of the wand beyond the expected.">
    <art icon="skills/skill_wandlore.png"/>
    <loadout type="wand" always="1" />
    <loadout type="wand" always="1" />
@@ -224,18 +224,18 @@
     <loadout type="toolkit" subtype="n-Dimensional Lathe"  always="1"/>
 </skill>
 
-<skill name="Archaeology" id="31" type="rogue" achievement="ACHIEVEMENT_SMITHING_MASTERY"  description="You start the game with a fedora, and are generally dashing, rogueish. One day you may even get tenure.">
+<skill name="Archaeology" id="31" type="rogue" achievement="ACHIEVEMENT_SMITHING_MASTERY"  description="&quot;No time for love, Dr. Jones?&quot; You start the game with a fedora and are generally dashing and rogueish. One day you may even get tenure.">
   <art icon="skills/skill_archaeology.png"/>
   <loadout type="armour" subtype="Fedora" always="1" />
   </skill>
 
-<skill name="Smithing" id="32" type="warrior" achievement="ACHIEVEMENT_TINKERING_MASTERY"  description="Smithing: for the adventurer who likes do-it-yourself projects. Also makes you stronger than usual.">
+<skill name="Smithing" id="32" type="warrior" achievement="ACHIEVEMENT_TINKERING_MASTERY"  description="Smithing: for the adventurer who likes do-it-yourself projects. Forge iron in fires! Construct weapons to smite your foes! Become more burly!">
   <art icon="skills/skill_smithing.png"/>
   <loadout type="toolkit" subtype="My Little Anvil Junior Smithing Kit" always="1" />
   <loadout type="toolkit" subtype="Disposable Ingot Press" always="1" />
   </skill>
 
-<skill name="Tinkering" id="33" type="rogue" achievement="ACHIEVEMENT_REALLY_TINKERING_MASTERY"  description="You can create new devices, especially traps, out of gears, mechanical parts, and other rubbish.">
+<skill name="Tinkering" id="33" type="rogue" achievement="ACHIEVEMENT_REALLY_TINKERING_MASTERY"  description="Spend time in a garden shed, building mechanical devices for the betterment of mankind... out of rubbish.">
    <art icon="skills/skill_tinkerer.png"/>
    <loadout type="toolkit" subtype="Tinkerer Parts" always="1" />
    <loadout type="toolkit" subtype="Disposable Ingot Press" always="1" />
