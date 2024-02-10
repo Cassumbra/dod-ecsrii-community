@@ -2,6 +2,17 @@
 
 Repo for community additions/tweaks to [Essential Core Skills Rebalance II](https://community.gaslampgames.com/threads/essential-core-skills-rebalance-ii-electric-bungalow.5624/) for [Dungeons of Dredmor](https://dungeonsofdredmor.com/).
 
+# Installation Instructions
+Put the files in your Dungeons of Dredmor installation folder. (On steam, you can find this by right clicking on the game -> properties -> installed files -> browse)
+This should result in files being replaced.
+You can make a backup of these files first if this concerns you.
+You don't need to copy the LICENSE, readme.md, or "!template nonsense" files.
+
+# Uninstallation Instructions
+Use your backup.
+OR, use steam's "verify integrity of game files" button. If that doesn't work for whatever reason, just uninstall and reinstall.
+
+
 # Changes to the original mod
 
 ### In progress
