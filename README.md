@@ -5,6 +5,9 @@ Repo for community additions/tweaks to [Essential Core Skills Rebalance II](http
 # Changes to the original mod
 
 ### In progress
+- Revamp Killer Vegan as a new skill, Organic Free Range Farmer
+
+### Complete
 - Newer stances let you cycle between themselves and their old stances without having to keep both on your hotbar.
 
 # ECSRII Notes.txt
