@@ -33,7 +33,7 @@
   </ability>
   
   The "skill" property of each ability, 23 for Sanguinista, determines which skill tree it belongs to based on the "id"
-  proprty of that skill. 
+  property of that skill. 
   
   -->
 
