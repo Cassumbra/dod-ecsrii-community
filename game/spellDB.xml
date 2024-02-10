@@ -5538,7 +5538,6 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	</spell>
    
 <spell name="Musashi's Duelling Stance" type="self" icon="skills/skill_sword_small.png">
-<spell name="Musashi's Duelling Stance" type="self" icon="skills/skill_sword_small.png">
 	<requirements weapon="0"/>
 	<effect type="removebuffbyname" name="The Montoya Defense"/>
 	<buff usetimer="0" allowstacking="0" removable="1" icon="skills/skill_sword.png" smallicon="skills/skill_sword_small.png">
@@ -5559,7 +5558,6 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centerEffect="0"/>
    </spell>  
 
-<spell name="The Montoya Defense" type="self" icon="skills/warrior/sword_lore32.png">
 <spell name="The Montoya Defense" type="self" icon="skills/warrior/sword_lore32.png">
 	<requirements weapon="0" />
 	<effect type="removebuffbyname" name="Musashi's Duelling Stance"/>
