@@ -209,7 +209,7 @@
 
 <spell name="Turn Demon" downtime="21" type="missile" icon="skills/turn_demon32.png" wand="0">
 	<effect type="trigger" spell="Turn Demon Hit" taxa="Demon" />
-	<description text="The power of Krong compells you - get OUT demons, I saayyyy get OUT!" />
+	<description text="The power of Krong compels you - get OUT demons, I saayyyy get OUT!" />
 	<anim sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
 	<impact sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
 	</spell>

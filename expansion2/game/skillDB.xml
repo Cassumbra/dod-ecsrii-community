@@ -23,7 +23,7 @@
 </ability>
 <!-- TODO on levelup, gain Clockwork Rocket recipe -->
 <ability name="Rocket Jump" icon="skills/rocket_jump64.png" skill="41" level="2" learnrecipe="Steam Rocket Bolt" >
-  <description text="You learn to propel yourself by detonating an explosive below your feet just as you jump through the air. This attack is bold and may suprise your enemies-- especially if you jump on their heads. Your Tinkering skill enhances the bomb blast. Only works in cardinal directions."/>
+  <description text="You learn to propel yourself by detonating an explosive below your feet just as you jump through the air. This attack is bold and may surprise your enemies-- especially if you jump on their heads. Your Tinkering skill enhances the bomb blast. Only works in cardinal directions."/>
   <spell name="Rocket Jump"/>
   <secondarybuff id="20" amount="1" />
   <!-- tinkering -->
@@ -33,7 +33,7 @@
   <targetHitEffectBuff percentage="5" name="Clockwork Threshing" />
 </ability>
 <ability name="Parabolic Mecha-stomp" icon="skills/mecha_stomp64.png" skill="41" level="4" learnrecipe="Clockwork Actuators">
-  <description text="You leap into the air and come crashing down. The power of your mechanical limbs rocks the dugeon floor like a small boat on a stormy sea of metaphor."/>
+  <description text="You leap into the air and come crashing down. The power of your mechanical limbs rocks the dungeon floor like a small boat on a stormy sea of metaphor."/>
   <spell name="Parabolic Mecha-stomp"/>
 </ability>
 <ability name="Thaumecha-kinetic Damper" icon ="skills/damper64.png" skill="41" level="5" learnrecipe="Imperial Clockwork Helm" >
@@ -92,7 +92,7 @@
 	</ability>
 <ability name="Baromatic Vortex Upgrade" icon="skills/baromatic_vortex64.png" skill="42" level="6">
 	<secondarybuff id="20" amount="1" /> <!-- tinkering -->
-	<description text="Your sonic wave projector is upgraded to expell a powerfully overcharged blast which can cascade through the bodies of multiple enemies. This device deals more damage as your tinkering proficiency improves."/>
+	<description text="Your sonic wave projector is upgraded to expel a powerfully overcharged blast which can cascade through the bodies of multiple enemies. This device deals more damage as your tinkering proficiency improves."/>
 	<spell name="Baromatic Vortex Blast"/>
 	<resistbuff blasting="1" />
 	</ability>

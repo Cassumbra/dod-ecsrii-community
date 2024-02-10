@@ -87,7 +87,7 @@ individual skill defs
    </ability>
 <ability name="Depressing Elemental Blast" icon="skills/depressing_blast64.png" skill="35" level="6">
    <spell name="Depressing Elemental Blast" />
-   <description text="Depressing. So very, VERY depressing. Anyone hit by this beam will be struct with existential despair and passivity." />
+   <description text="Depressing. So very, VERY depressing. Anyone hit by this beam will be struck with existential despair and passivity." />
    </ability>
 
 
@@ -140,7 +140,7 @@ individual skill defs
    </ability>
 
 <ability name="Arch-Diggle Smash" icon="skills/archdiggle_smash64.png" skill="36" level="6" polymorphedOnly="1" polymorphTag="Diggle">
-   <description text="The mightiest diggles know how to utilize their fearsome auger in devasting attack maneuvers."/>
+   <description text="The mightiest diggles know how to utilize their fearsome auger in devastating attack maneuvers."/>
    <spell name="Arch-Diggle Smash" />
    </ability>
 
