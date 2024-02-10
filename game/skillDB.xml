@@ -7,6 +7,11 @@
   a name, a description, an image, a type (warrior, rogue, or wizard), a unique id, and possibly a "loadout" (an item given to
   the player at the start of the game should they take that skill).
   
+  <skill name="Blood Mage"  type="wizard" id="23" achievement="ACHIEVEMENT_BLOOD_MAGIC_MASTERY"  description="You regain magic points by killing things. Every time you kill something, you regain some mana.">
+    <art icon="skills/skill_bloodmagic.png"/>
+    <loadout type="weapon" subtype="Sacrificial Dagger" />
+  </skill>
+
   While initially loadouts would not always yield the item, we found that this randomness wasn't fun, so every loadout is given
   an always="1" tag.  At this point we're not sure exactly what would happen if this weren't there, but feel free to find out!
   
@@ -14,7 +19,7 @@
   Here is an example of a skill tree entry:
   
   <ability name="Blood Magic" icon="skills/skill_bloodmagic.png" skill="23" startSkill="1">
-  <description text="Gain magical power through the blood of your enemies. Makes magic a much messier affair. Not a good conversation-starter."/>
+    <description text="Gain magical power through the blood of your enemies. Makes magic a much messier affair. Not a good conversation-starter."/>
   </ability>
   
   Each skill tree entry has a unique skill number, name, icon, description, and importantly startSkill="1".  The name isn't very descriptive anymore, but
@@ -24,10 +29,11 @@
   skill tree in the example above:
   
   <ability name="Sanguinista" icon="skills/wizard/bloodmagic1_64.png" skill="23" level="0">
-  <description text="You know how to take magic from the blood of your enemies and gain mana after each kill."/>
+    <description text="You know how to take magic from the blood of your enemies and gain mana after each kill."/>
   </ability>
   
-  [[where is sanguinista hooked up?]] 
+  The "skill" property of each ability, 23 for Sanguinista, determines which skill tree it belongs to based on the "id"
+  proprty of that skill. 
   
   -->
 
