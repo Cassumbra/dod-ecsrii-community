@@ -15,6 +15,23 @@ OR, use steam's "verify integrity of game files" button. If that doesn't work fo
 
 # Changes to the original mod
 
+### Planned
+- Make potions give empties when quaffed. You need empties to craft (some?) potions (Not sure abt this one...). You can also drink from fountains to fill empties (This is definitely good, though!).
+- Wand rework. Wands should fill certain criteria:
+  - External effects to contrast with the internal effects of potions.
+  - Wands should serve as powerful utility tools. (Damaging effects should be AOE, targetted towards specific kinds of enemies, or should have extra utility effects besides damaging)
+  - Wand descriptions should be more descriptive (while keeping their humor).
+- Rework magic training to give you discounts when casting spells.
+- Give Wand Lore a skill that drains wands and gives extra bonuses the more skillpoints you have invested in Wand Lore.
+  - Drained wand gives you MP (And also a burnt out wand.)
+  - Drained wand gives you a temporary buff to magic power. (This can stack.)
+  - Drained wand gives you a random reagent for wandcrafting.
+  - Drained wand gives you a temporary buff to haywire chance. (This can stack.)
+  - Drained wand gives you MP (And also a burnt out wand.)
+  - Drained wand gives you a random reagent for wandcrafting.
+- Alchemists should get bonuses for crafting ingots the same way Tinkerers and Smiths do. (Not sure about this one.)
+Yes, these are changes to much more than just the core skills. ITS ALL CONNECTED. EVERYTHINGS CONNECTED.
+
 ### In progress
 - Revamp Killer Vegan as a new skill, Organic Free Range Farmer
 
