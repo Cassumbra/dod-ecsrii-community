@@ -30,6 +30,7 @@ OR, use steam's "verify integrity of game files" button. If that doesn't work fo
   - Drained wand gives you MP (And also a burnt out wand.)
   - Drained wand gives you a random reagent for wandcrafting.
 - Alchemists should get bonuses for crafting ingots the same way Tinkerers and Smiths do. (Not sure about this one.)
+
 Yes, these are changes to much more than just the core skills. ITS ALL CONNECTED. EVERYTHINGS CONNECTED.
 
 ### In progress
