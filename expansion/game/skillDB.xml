@@ -157,49 +157,46 @@ individual skill defs
 
 
 <!-- Veganism -->
-<skill name="Killer Vegan" id="38" type="warrior" achievement="ACHIEVEMENT_VEGAN_MASTERY"  description="The power of clean living, moral superiority, and gluten-magic.">
+<skill name="Diggle Wranglin' Rancher" id="38" type="warrior" achievement="ACHIEVEMENT_VEGAN_MASTERY"  description="The power of clean living, humble ranching, and lactic-magic.">
    <art icon="skills/killer_vegan64.png"/>
-   <loadout type="food" subtype="Tofu" amount="5" always="1" />
-   <flags nofood="1" veganism="1" friendlyTaxa="Animal"/>
+   <loadout type="food" subtype="Apple" amount="2" always="1" />
+   <loadout type="food" subtype="Plum" amount="2" always="1" />
+   <loadout type="food" subtype="Pear" amount="2" always="1" />
+   <loadout type="armor" subtype="Bucket" amount="2" always="1" />
 </skill>
   
-<ability name="Killer Vegan" skill="38" type="warrior" icon="skills/killer_vegan64.png" startSkill="1">
-   <description text="The power of clean living, moral superiority, and gluten-magic." />
-  <flags veganism="1" friendlyTaxa="Animal"/>
+<ability name="Diggle Wranglin' Rancher" skill="38" type="warrior" icon="skills/killer_vegan64.png" startSkill="1">
+   <description text="The power of clean living, humble ranching, and lactic-magic." />
 </ability>
 
 
 <ability name="Green Harvest" icon="skills/green_harvest64.png" skill="38" level="0">
-   <targetHitEffectBuff name="Fallen Vegan" taxa="Animal" percentage="50" /> <!-- If you attack an animal, you get fallen vegan. -->
-   <description text="The streets shall run green with the blood (sap?) of the vegetables -- and legumes, funguses, minerals, robots, homunculi, misc. demons and all other technically non-living beings) -- but particularly vegetables because you can harvest their flesh for Vegan-appropriate nutrition." />
-   <targetKillBuff name="Green Harvest" taxa="Vegetable" percentage="50" />
+   <description text="Planting season is over. It's time to reap what you've sown -- or, at least, reap from whoever put all these darn veggies in this dungeon, at least. Seriously, how are they even growing down here without any sun?" />
+   <targetKillBuff name="Green Harvest" taxa="Vegetable" percentage="50" /> <!-- V: TODO: Should we buff this to 100? -->
    <primarybuff id="0" amount="1" />
    <primarybuff id="2" amount="1" />
    <secondarybuff id="0" amount="3" /> <!-- hp -->
-   <flags  friendlyTaxa="Animal"/>
    </ability>
   
-<ability name="Animal Friend" icon="skills/animal_friend64.png" skill="38" level="1">
-   <description text="Your animal friend will fight for you if you ask them because they love you sooo much. (Go animal friend, fight for me!) Be wary though, for your greater commitment to Veganism may cause greater penalties when you hurt the cute animals." />
-   <spell name="Make Animal Friend" />
+<ability name="Tame Animal" icon="skills/animal_friend64.png" skill="38" level="1">
+   <description text="The creatures down here sure are rowdy! No matter, a wholesome diet of fresh veggies will temper their organ shredding rage -- that, or it will convince them to turn their anger to something other than you. (Consumes one veggie from your inventory, also makes monster milk! Monster milk makes cheeeeeese.)" />
+   <spell name="Tame Animal" />
    <primarybuff id="0" amount="1" />
    <primarybuff id="2" amount="1" />
    <secondarybuff id="0" amount="3" /> <!-- hp -->
-   <targetHitEffectBuff name="Vegan Shame" taxa="Animal" percentage="50" />
 </ability>
   
 <ability name="Clean Living" icon="skills/clean_living64.png" skill="38" level="2">
-   <description text="Attention to correct nutrition enhances your health (and killing vegetables will give you experience rewards). Be wary though, for your greater commitment to Veganism may cause greater penalties when you hurt the cute animals." />
+   <description text="Attention to correct nutrition enhances your health (and killing vegetables will give you experience rewards)." />
    <primarybuff id="0" amount="2" />
    <primarybuff id="2" amount="2" />
    <secondarybuff id="0" amount="10" /> <!-- hp -->
    <secondarybuff id="13" amount="1" /> <!-- health regen -->
-   <targetHitEffectBuff name="Vegan Purging" taxa="Animal" percentage="50" />
    <targetKillBuff name="Vegan Pride" percentage="100" taxa="Vegetable" />
 </ability>
   
-<ability name="Aura of Self-Righteousness" icon="skills/selfrighteous_aura64.png" skill="38" level="3">
-   <description text="Your ethical standards imbue your attacks with burning righteousness! And, in turn, when you attack there is a chance for your righteousness to blind your enemies with its shining moral superiority." />
+<ability name="Unmatched Power" icon="skills/selfrighteous_aura64.png" skill="38" level="3">
+   <description text="All those hours under the sun have finally paid off! Something has ignited inside of you, and now you -- radiate. Your radiance imbues your attacks with burning righteousness! Additionally, when you attack there is a chance for your radiance to blind your enemies with its nuclear fusion." />
    <primarybuff id="0" amount="2" />
    <primarybuff id="2" amount="2" />
    <secondarybuff id="0" amount="3" /> <!-- hp -->
@@ -209,9 +206,9 @@ individual skill defs
    <targetHitEffectBuff name="Blinding Flash" percentage="8" />
 </ability>
   
-<ability name="Level 5 Vegan" icon="skills/level5vegan64.png" skill="38" level="4">
-   <description text="Having achieved the purity and perfection of the fifth level of Veganism, you are privy to the inner secrets and methods of The Vegans." />
-   <spell name="Break The Circle Of Life" />
+<ability name="Rancher Resilience" icon="skills/level5vegan64.png" skill="38" level="4">
+   <description text="You have become deathly allergic to doctors. 's fine, if you want something done right, do it yerself. Removes all debuffs. ('at'll do it!)" />
+   <spell name="Rancher Resilience" />
    <primarybuff id="0" amount="3" />
    <primarybuff id="2" amount="3" />
    <secondarybuff id="0" amount="5" /> <!-- hp -->

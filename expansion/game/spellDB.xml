@@ -93,7 +93,6 @@
 <spell name="Green Harvest" type="target" icon="skills/green_harvest32.png" wand="0">
 	<effect type="damage" slashing="5"/>
 	<effect affectsCorpses="0" type="spawnitemfromlist">
-		<option name="Tofu"/>
 		<option name="Pear"/>
 		<option name="Plum"/>
 		<option name="Apple"/>
@@ -109,12 +108,20 @@
 	<anim sprite="sprites/sfx/corpse_hit_mini/corpse_hit_mini" frames="4" framerate="100" sfx="fleshbore" centerEffect="0"/>
 	</spell>
   
+  
+<spell name="Tame Animal" downtime="54" type="item" consumeItem="1" consumeItemType="food" noanimation="1" icon="skills/animal_friend32.png" >
+	<effect type="consumeanything"/>
+	<effect type="trigger" spell="Make Animal Friend"/>
+	<!-- <description text="Share food with the animal in front of you! This makes them like you, and also produces milk." /> -->
+	</spell>
+  
 <!--charms animals or makes you invisible to animals -->
-<spell name="Make Animal Friend" downtime="54" type="missile" icon="skills/animal_friend32.png" wand="0">
+<spell name="Make Animal Friend" type="template" templateID="30" anchored="1" noanimation="1" icon="skills/animal_friend32.png" >
 	<effect type="charm" turns="100" taxa="Animal" />
-	<description text="Your animal friend will fight for you because they love you sooo much. (Go animal friend, fight for me!)" />
-	<impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centerEffect="0" sfx="blast" />
-	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centerEffect="0" sfx="magic" />
+	<effect type="pacify" taxa="Animal" />
+	<!--- V: TODO: i don't feel up to implementing monster milk atm, maybe someone else can do it sometime. i just dont have my heart in it atm. i want to do other stuff. -->
+	<!-- <effect type="spawnitematlocation" taxa="Animal" itemName="Cheese" amount="1"/> -->
+	<description text="Share food with the animal in front of you! This makes them like you, and also produces milk." />
 	</spell>
 <!--Stat bonus due to clean living  Unfinished
   <spell name="Clean Living" downtime="1" type="missile" icon="skills/mystic_missile32.png" wand="0">
@@ -188,11 +195,9 @@
 	<description text="Your body is polluted by non-Vegan things! Shame. This will go away eventually." />	
 	</spell>
   
-<spell name="Break The Circle Of Life" downtime="120" type="self" icon="skills/level5vegan32.png" wand="0">
-	<effect type="removebuffbyname" name="Vegan Purging" amount="1" />
-	<effect type="removebuffbyname" name="Vegan Shame" amount="1" />
-	<effect type="removebuffbyname" name="Fallen Vegan" amount="1" />
-	<description text="You have learned the Vegan secret to breaking the circle of life: You can purify your body and mind through will alone." />
+<spell name="Rancher Resilience" downtime="120" type="self" icon="skills/level5vegan32.png" wand="0">
+	<effect type="uncurse" amount="1" />
+	<description text="You have become deathly allergic to doctors. 's fine, if you want something done right, do it yerself. Removes all debuffs. ('at'll do it!)" />
 	<anim sprite="sprites/sfx/summonA/summonA" frames="10" framerate="60" centerEffect="1" sfx="choir" />
 	</spell>
 
