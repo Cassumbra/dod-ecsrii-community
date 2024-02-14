@@ -6192,4 +6192,67 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
 	<effect type="trigger" spell="Inverse Minion Trigger"/>
 	</spell>
    
+<!-- New Wand Effects -->
+<spell name="Handy Wand Effect" type="targetfloor" icon="skills/spells/psychokinetic_shove32.png" wand="1">
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="psychic_shove" />
+    <effect type="manipulateobject" />
+	<effect type="knock" amount="3"/>
+    <description text="Manipulate objects with the powers of the mind." />
+    </spell>
+	
+<spell name="Coral Wand Effect" type="targetmonster" icon="skills/wizard/spell_white6_32.png" wand="1">
+	<!-- V: TODO: Make this use some kind of smoke effect, lol -->
+    <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" sfx="white"/>
+	<effect type="damage" asphyxiative="4" asphyxiativeF="1.00" existential="2" existentialF="2.00" secondaryScale="23" affectscaster="1"/>
+	<effect type="confuse" amount="5"/>
+	<effect type="pacify"/>
+	<effect type="trigger" spell="Reefed" amount="0" affectsCaster="1" />
+    <description text="You're feeling cool -- chill, even. Woah..." monsterText="takes a hit."/>
+    </spell>
+	
+<spell name="Reefed" type="target" icon="skills/wizard/spell_white6_32.png">
+    <buff usetimer="1" time="20" allowstacking="1" stacksize="4" icon="skills/wizard/spell_white6_64.png" smallicon="skills/wizard/spell_white6_32.png" bad="1" self="0" >
+		<primarybuff id="2" amount="-5"/>
+		<primarybuff id="1" amount="-5"/>
+		<resistbuff existential="1"/>
+	</buff>
+    <description text="You're feeling cool -- chill, even. Woah..."/>
+    </spell>
+   
+<spell name="Wand of Tesla Effect" type="targetcorpse" icon="skills/voltaic64.png" wand="1">
+    <anim sprite="sprites/sfx/lightningstrike/lightningstrike" frames="6" sfx="lightning_bolt"/>
+	<effect type="resurrection"/>
+	<effect type="trigger" spell="Wand of Tesla Pre Spread"/>
+	<effect type="dot" spell="Wand of Tesla Pre Spread" amount="3"/>
+	<effect type="pacify"/>
+	<effect type="charm"/>
+	<effect type="trigger" spell="Tesla's Übercharge" amount="0" affectsCaster="1" affectsCorpses="1" />
+    </spell>
+	
+<spell name="Tesla's Übercharge" type="target" icon="skills/voltaic64.png">
+	<buff useTimer="0" brittle="10" allowstacking="0" icon="skills/voltaic64.png" smallicon="skills/voltaic32.png" bad="0" self="0">
+		<resistbuff voltaic="6" />
+		<damagebuff voltaic="2" />
+		<targetHitEffectBuff percentage="30" name="Arc 1" />
+		<playerHitEffectBuff percentage="100" name="Wand of Tesla Pre Spread"/>
+	</buff>
+	<description text="You feel ELECTRIC! Enemies that hit you are going to be having a bad time."/>
+    </spell>
+	
+<spell name="Wand of Tesla Pre Spread" type="template" templateID="09" icon="skills/voltaic64.png">
+    <anim sprite="sprites/sfx/lightningarc/lightningarc" frames="7" sfx="elec"/>
+	<effect type="damage" voltaic="4" voltaicF="1.00" secondaryScale="23" affectscaster="1"/>
+	<effect type="paralyze" amount="2" turns="1"/>
+	<!-- 
+	<effect type="trigger" self="1" requirebuffonnottrigger="1" requirebuffonnottriggername="Tesla Charged" spell="Wand of Tesla Spread"/>
+    -->
+	</spell>
+	
+<!--
+<spell name="Wand of Tesla Spread" type="target" icon="skills/voltaic64.png">
+	<effect type="trigger" spell="Tesla Charged"/>
+	<effect type="dot" spell="Wand of Tesla Pre Spread" amount="3"/>
+    </spell>
+  -->
+  
 </spellDB>

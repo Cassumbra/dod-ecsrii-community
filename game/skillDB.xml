@@ -227,6 +227,7 @@
    <loadout type="wand" always="1" />
    <loadout type="wand" always="1" />
    <loadout type="wand" always="1" />
+   <loadout type="wand" subtype="Wand of Tesla" always="1" />
     <loadout type="toolkit" subtype="n-Dimensional Lathe"  always="1"/>
 </skill>
 
