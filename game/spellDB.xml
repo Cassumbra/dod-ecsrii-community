@@ -3499,7 +3499,7 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
    <impact sprite="sprites/sfx/impactA/impactA" frames="6" framerate="80" sfx="blast" centerEffect="0"/>
    </spell>
 
-<spell name="Leyline Siphoning" type="self" downtime="42" icon="skills/magic_tap32.png" >
+<spell name="Leyline Siphoning" type="self" downtime="30" icon="skills/magic_tap32.png" >
    <effect type="spellpoints" amount="2" />
    <description text="Effecting your knowledge of leylines, you are siphoning vital essence from the aethereal realm. Try not to anger any outer beings by doing this too much."/>
    <buff
@@ -3510,30 +3510,55 @@ Spell Database for Dungeons of Dredmor. As always, don't look if you don't want 
       smallicon="skills/magic_tap32.png">
    </buff>
    <effect resistable="0" type="dot" spell="Regen Mana 2" amount="12" />
-   <effect type="trigger" percent="6" spell="Attracted Unwanted Extraplanar Attention"/>
    <anim sprite="sprites/sfx/manafount/manafont" frames="7" framerate="100" sfx="white"/>
    </spell>
 
 
-<spell name="Extra-planar Concentration" downtime="63" type="self" icon="skills/extraplanar_concentration32.png" >
-   <effect type="spellpoints" amount="2" />
-   <description text="Extremely intense concentration allows you to greatly increase your mana regeneration for a short while. Such concentration may cause you to forget that you're in a dungeon filled with murderous monsters, so please be mindful of your surroundings when entering this state of mind."/>
+<spell name="Extra-planar Concentration" downtime="30" type="self" icon="skills/extraplanar_concentration32.png" >
    <buff
-      useTimer="1"
-      time="13"
+      useTimer="0"
+      brittle="1"
+	  allowstacking="0"
       icon="skills/extraplanar_concentration64.png"
       smallicon="skills/extraplanar_concentration32.png">
-      <secondarybuff id="18" amount="-2" /> <!-- sight -->
-      <secondarybuff id="1" amount="10" /> <!-- mana -->
-      <secondarybuff id="14" amount="15" /> <!-- mana regen -->
-      <secondarybuff id="6" amount="-50" /> <!-- dodge -->
-      <secondarybuff id="7" amount="-50" /> <!-- block -->
-      <secondarybuff id="8" amount="-50" /> <!-- counter -->
+      <secondarybuff id="18" amount="-1" /> <!-- sight -->
+	  <primarybuff id="5" amount="2" /> <!-- savvy -->
+      <secondarybuff id="14" amount="3" /> <!-- mana regen -->
+      <secondarybuff id="6" amount="-10" /> <!-- dodge -->
+      <secondarybuff id="7" amount="-10" /> <!-- block -->
    </buff>
-   <effect type="dot" resistable="0" spell="Regen Mana 2" amount="13" />
-   <effect type="trigger" percent="6" spell="Attracted Unwanted Extraplanar Attention"/>
    <anim sprite="sprites/sfx/arcA/arcA" frames="4" framerate="100" sfx="white"/>
    </spell>
+   
+<spell name="Wizarding Associate" type="self" icon="skills/wizard/magictraining1_32.png" >
+	<effect percent="15" type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Extra-planar Concentration" spell="Regen Mana 1"/>
+	<effect percent="45" type="trigger" requirebuffontrigger="1" requirebuffontriggername="Extra-planar Concentration" spell="Regen Mana 1"/>
+	<!-- Due to how this is coded, on top of the 65% chance, you also get an additional 15% chance from above, but I think that's okay. -->
+	<effect percent="65" type="trigger" requirebuffontrigger="1" requirebuffontriggername="Extra-planar Hyperfocus" spell="Regen Mana 1"/>
+   </spell>
+   
+<spell name="Add Extra-planar Hyperfocus" type="self" icon="skills/wizard/magictraining2_32.png" >
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Extra-planar Concentration" spell="Extra-planar Hyperfocus"/>
+	<effect type="removebuffbyname" name="Extra-planar Concentration"/>
+   </spell>
+   
+<spell name="Extra-planar Hyperfocus" type="self" icon="skills/wizard/magictraining2_32.png" >
+   <buff
+      useTimer="0"
+      brittle="2"
+	  allowstacking="0"
+      icon="skills/wizard/magictraining2_64.png"
+      smallicon="skills/wizard/magictraining2_32.png">
+	  <primarybuff id="5" amount="4" /> <!-- savvy -->
+      <secondarybuff id="14" amount="4" /> <!-- mana regen -->
+      <secondarybuff id="6" amount="-5" /> <!-- dodge -->
+      <secondarybuff id="7" amount="-5" /> <!-- block -->
+      <secondarybuff id="3" amount="10"/> <!-- Magic Power -->
+   </buff>
+   <anim sprite="sprites/sfx/arcA/arcA" frames="4" framerate="100" sfx="white"/>
+   </spell>
+   
+
 
 <spell name="Blood Mana" type="self" icon="skills/skill_bloodmagic.png" >
    <effect percent="100" type="spellpoints" amount="1" amountF="0.05" taxa="Animal" />

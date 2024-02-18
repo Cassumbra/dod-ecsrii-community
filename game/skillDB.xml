@@ -445,36 +445,38 @@
    <description text="A master of leylines can use invisible geometries to move-without-moving -- but only in cardinal directions. Be warned though, for moving through the aethereal realm greatly saps magical strength."/>
    </ability>
   
-<ability name="You, D.M.A." icon="skills/wizard/magictraining0_64.png" skill="22" level="0">
-  <description text="That's Doctorate of Magical Arts, you know. Magic Community College is starting to really pay off - your spellpower and mana pool are increased."/>
-  <primarybuff id="5" amount="4" /> <!-- savvy -->
-  <primarybuff id="1" amount="1"/> <!-- sagacity -->
+  
+<ability name="Certified Mage" icon="skills/wizard/magictraining0_64.png" skill="22" level="0">
+  <description text="Magic Community College is starting to really pay off - your spellpower and mana pool are increased."/>
+  <primarybuff id="5" amount="1" /> <!-- savvy -->
+  <secondarybuff id="3" amount="1"/> <!-- spellpower -->
+  <secondarybuff id="1" amount="5"/> <!-- mana -->
   </ability>
 <ability name="License To Cast" icon="skills/magic_license64.png" skill="22" level="1" >
    <description text="You have a license to cast and to take away the right to cast. Any monster hit by this spell will lose their casting ability for a short time."/>
    <secondarybuff id="3" amount="1"/> <!-- spellpower -->
-   <primarybuff id="5" amount="2" /> <!-- savvy -->
+   <primarybuff id="5" amount="1" /> <!-- savvy -->
    <spell name="Thaumoentropic Missile" />
    </ability>
-<ability name="Certamen Certified" icon="skills/wizard/magictraining1_64.png"  skill="22" level="2">
-  <description text="As a dues-paying member of the Certamen Duelling Association, you receive a 5% discount on conference fees and a complimentary membership card which you really ought to get laminated."/>
-  <spell name="Certamen Circle"/>
-  <primarybuff id="5" amount="2" /> <!-- savvy -->
-  <primarybuff id="1" amount="1"/> <!-- sagacity -->
-  </ability>
-<ability name="Extra-planar Concentration" icon="skills/extraplanar_concentration64.png" skill="22" level="3" >
+<ability name="Extra-planar Concentration" icon="skills/extraplanar_concentration64.png" skill="22" level="2" >
    <spell name="Extra-planar Concentration" />
    <description text="Extremely intense concentration allows you to greatly increase your mana regeneration for a short while. Such concentration may cause you to forget that you're in a dungeon filled with murderous monsters, so please be mindful of your surroundings when entering this state of mind." />
-   <secondarybuff id="3" amount="1"/> <!-- spellpower -->
-   <primarybuff id="5" amount="2" /> <!-- savvy -->   
+   <primarybuff id="5" amount="1" /> <!-- savvy -->   
    </ability>
-<ability name="The Master Spell" icon="skills/wizard/magictraining2_64.png"  skill="22" level="4">
-  <description text="When once you were the apprentice, now you are the master."/>
-  <primarybuff id="1" amount="5"/> <!-- sagacity -->
-  <primarybuff id="5" amount="5"/> <!-- savvy -->
-  <spell name="The Master Spell"/>
-  <triggeroncast percent="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      RemoveMasterSpell"/>
+<ability name="Wizarding Associate" icon="skills/wizard/magictraining1_64.png"  skill="22" level="3">
+  <description text="As a dues-paying member of the Wizarding Association, you receive a 5% discount on conference fees and a complimentary Wizarding Association membership card which you really ought to get laminated. You get some of your mana back when casting. The chance for this to happen is increased while you focus."/>
+  <secondarybuff id="1" amount="10"/> <!-- mana -->
+  <primarybuff id="5" amount="1" /> <!-- savvy -->
+  <triggeroncast percent="100" name="Wizarding Associate"/>
   </ability>
+<ability name="Master of Magic" icon="skills/wizard/magictraining2_64.png"  skill="22" level="4">
+  <description text="When once you were the apprentice, now you are the master. You now focus even FURTHER when you concentrate AND you've learned to negate some of the negatives of your focus."/>
+  <primarybuff id="1" amount="3"/> <!-- sagacity -->
+  <primarybuff id="5" amount="3"/> <!-- savvy -->
+  <secondarybuff id="11" amount="5" /> <!-- resist -->
+  <triggeroncast percent="100" name="Add Extra-planar Hyperfocus" />
+  </ability>
+  
 
 <ability name="Blood Sucker" icon="skills/skill_vampirism.png" skill="13" level="0">
   <targetHitEffectBuff percentage="100" name="Vampirism Attack" />
