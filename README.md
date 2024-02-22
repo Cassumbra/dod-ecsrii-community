@@ -3,19 +3,23 @@
 Repo for community additions/tweaks to [Essential Core Skills Rebalance II](https://community.gaslampgames.com/threads/essential-core-skills-rebalance-ii-electric-bungalow.5624/) for [Dungeons of Dredmor](https://dungeonsofdredmor.com/).
 
 # Installation Instructions
+
 Put the files in your Dungeons of Dredmor installation folder. (On steam, you can find this by right clicking on the game -> properties -> installed files -> browse)
 This should result in files being replaced.
 You can make a backup of these files first if this concerns you.
 You don't need to copy the LICENSE, readme.md, or "!template nonsense" files.
 
 # Uninstallation Instructions
+
 Use your backup.
 OR, use steam's "verify integrity of game files" button. If that doesn't work for whatever reason, just uninstall and reinstall.
-
 
 # Changes to the original mod
 
 ### Planned
+
+BY CASSUMBRA:
+
 - Make potions give empties when quaffed. You need empties to craft (some?) potions (Not sure abt this one...). You can also drink from fountains to fill empties (This is definitely good, though!).
 - Wand rework. Wands should fill certain criteria:
   - External effects to contrast with the internal effects of potions.
@@ -32,10 +36,46 @@ OR, use steam's "verify integrity of game files" button. If that doesn't work fo
 
 Yes, these are changes to much more than just the core skills. ITS ALL CONNECTED. EVERYTHINGS CONNECTED.
 
+BY SEBASREBAZ:
+
+- Add the Item and Crafting XMLs to the game and expansions.
+- Make bombs, flasks and special bolts scale with either Tinkering, Alchemy or Wandcrafting as described next:
+  - The following will scale with Alchemy:
+    - Mosolov Cocktail
+    - Poison Flask
+    - Acid Flask
+    - Noxious Brimstone Flask
+    - Bonzai Bomb
+    - Fire Bolt
+    - Poison Ampoule Bolt
+    - Poison Bottle Bolt
+    - Acid Ampoule Bolt
+    - Acid Bottle Bolt
+  - The following will scale with Tinkering:
+    - Makeshift Bomb
+    - Concussion Bomb
+    - Thermite Bomb
+    - Iron Bomb
+    - Frag Bomb
+    - Hand Grenade
+    - Tesla's Bolt
+    - Clockwork Drill Bolt
+    - Clockwork Drill Bomb
+    - Clockwork Grappling Bolt
+    - Steam Rocket Bolt
+  - The following will scale with both Tinkering and Wandcrafting because of their recipes:
+    - Clockwork Drill Bomb (more Tinkering than Wandcrafting)
+    - The Bomb (more Wandcrafting than Tinkering)
+- Re-introduce previously cancelled items since they currently have no art:
+  - Incendiary Grenade: Powerful Tinkering throwable which engulfs enemies on fire in a 3x3 radius.
+  - Crit Steam Rocket Bolt: Similar to the Steam Rocket Bolt, but it has thrice its explosive damage all the time instead of a 10% chance.
+
 ### In progress
+
 - Revamp Killer Vegan as a new skill, Organic Free Range Farmer
 
 ### Complete
+
 - Newer stances let you cycle between themselves and their old stances without having to keep both on your hotbar.
 - Magic training reworked to give you mp back on casting spells. Also concentration is better, and it can become hyperfocus at the capstone.
 
