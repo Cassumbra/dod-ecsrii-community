@@ -72,7 +72,13 @@ BY SEBASREBAZ:
 
 ### In progress
 
+BY CASSUMBRA:
+
 - Revamp Killer Vegan as a new skill, Organic Free Range Farmer
+
+BY SEBASREBAZ:
+
+- Tinker with number balancing on thrown items
 
 ### Complete
 
